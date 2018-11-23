@@ -6,10 +6,11 @@ body ::-webkit-scrollbar {
 
 
 .link {
-    color: #55bb8a;
+    color: #15231b;
 }
 
 .link:hover {
+    color: #15231b;
     font-weight: bold;
 }
 
