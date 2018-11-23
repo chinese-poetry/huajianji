@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %} TEST {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/assets/semantic/components/container.min.css">
+    <link rel="stylesheet" href="/assets/semantic/components/grid.min.css">
+{% endblock %}
+
+{% block main %}
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('/images/{{image}}');">
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                {{ poetry.title }}
+            </div>
+            <div class="author">
+                {{ poetry.author }}
+            </div>
+
+            <div class="content">
+                {% for p in poetry.paragraphs %}
+                <p>{{ p }}</p>
+                 {% endfor %}
+            </div>
+
+            <hr class="line" align="right">
+
+            <div class="meta content">
+                <p><a class="link" href="/www/list/{{juan}}.html">{{juan}}</a></p>
+                <p><a href="/www/rhythmic/{{poetry.rhythmic}}.html">{{poetry.rhythmic}}</a></p>
+            </div>
+
+            {% if poetry.notes %}
+            <h3 class="ui header">注释</h3>
+
+            <div class="notes content">
+                {% for left, right in poetry.notes %}
+                <p>[{{ loop.index }}] 「{{ left }}」 {{ right }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}

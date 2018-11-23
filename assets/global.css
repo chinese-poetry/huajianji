@@ -1,0 +1,124 @@
+body ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px!important;
+    height: 2px!important;
+}
+
+
+.link {
+    color: #55bb8a;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+
+#main #detail {
+    margin: 0;
+}
+#main #detail .column {
+    height: 100%;
+    padding: 0;
+}
+
+#main #detail .cover {
+    height: 80%;
+    width: 80%;
+    background-size: cover;
+    background-position: center center;
+    /*box-shadow: 0 0 1px grey;*/
+    background-image: url('/assets/images/thumb.jpg');
+    margin: auto;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+}
+
+#main #detail .you {
+   /* background-image: url('/assets/images/bg.png'); */
+    background-color: #fff;
+    color: #333;
+}
+
+#main #detail .poetry {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    width: 80%;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    overflow: auto;
+}
+
+#main #detail .title {
+    letter-spacing: 2px;
+    font-size: 2.315rem;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+#main #detail .author {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: #ccc;
+    letter-spacing: 2px;
+    font-size: 1.315rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+
+#main .content {
+    padding-left: 1em;
+    letter-spacing: 2px;
+    font-size: 1.315rem;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+#main #detail .line{
+    height: 2px;
+    width: 8em;
+    background: #333;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+#main #detail .meta {
+    padding-right: 1em;
+    text-align: right;
+}
+
+
+#main .meta {
+    text-align: right;
+}
+
+
+#main #detail .notes {
+    padding-left: 1em;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #main #detail .poetry {    
+        padding: 1em;
+        width: calc(100% - 1em * 2);
+        overflow: unset;
+        height: auto;
+    }
+
+    #main #detail .cover {
+        width: 100%;
+        height: 100%;
+    }
+
+    #main #detail .zuo {
+        height: 50%;
+    }
+
+    #main #detail .you {
+        height: auto;
+    }
+}

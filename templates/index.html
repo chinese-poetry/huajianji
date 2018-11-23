@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %} 首页 {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/assets/semantic/components/container.min.css">
+    <link rel="stylesheet" href="/assets/semantic/components/grid.min.css">
+    <link rel="stylesheet" href="/assets/semantic/components/list.min.css">
+{% endblock %}
+
+{% block main %}
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('/assets/images/thumb.jpg');">
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title" style="padding-left: 1em;">
+                花间集
+            </div>
+
+            <hr class="line" align="right"/>
+
+            <div class="content meta">
+                <p>{{ author }}</p>
+            </div>
+
+                <div class="ui selection list">
+                {% for juan in juans %}
+                    <div class="item content">
+                        <p>- <a href="/www/list/{{juan}}.html">{{ juan }}</a></p>
+                    </div>
+                 {% endfor %}
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}
