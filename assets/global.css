@@ -126,13 +126,37 @@ body ::-webkit-scrollbar {
     padding-left: 1em;
 }
 
+#main .mobile {
+    display: none;
+}
+
+#main .mobile.column{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+#main #detail .bottom {
+    padding: .6em!important;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
 
 @media only screen and (max-width: 767px) {
     #main #detail .poetry {    
-        padding: 1em;
-        width: calc(100% - 1em * 2);
+        width: 100%;
         overflow: unset;
         height: auto;
+        position: unset;
+    }
+
+    #main #detail .content {
+        padding: 0;
+    }
+
+    #main .mobile {
+        display: block;
     }
 
     #main #detail .cover {
@@ -146,6 +170,7 @@ body ::-webkit-scrollbar {
     }
 
     #main #detail .you {
+        padding: 1em;
         height: auto;
     }
 }
@@ -155,11 +180,20 @@ body ::-webkit-scrollbar {
     #main .grid .column {
         width: 100%;
     }
+
     #main #detail .poetry {    
-        padding: 1em;
-        width: calc(100% - 1em * 2);
+        width: 100%;
         overflow: unset;
         height: auto;
+        position: unset;
+    }
+
+    #main #detail .content {
+        padding: 0;
+    }
+
+    #main .mobile {
+        display: block;
     }
 
     #main #detail .cover {
@@ -173,6 +207,7 @@ body ::-webkit-scrollbar {
     }
 
     #main #detail .you {
+        padding: 1em;
         height: auto;
     }
 }
