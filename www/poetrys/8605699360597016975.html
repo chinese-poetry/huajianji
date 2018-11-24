@@ -36,7 +36,7 @@
                 王安石
             </div>
 
-            <div class="content">
+            <div class="content" style="padding-left: 1em;">
                 
                 <p>登临送目，正故国晚秋，天气初肃。千里澄江似练，翠峰如簇。归帆去棹残阳里，背西风，酒旗斜矗。彩舟云淡，星河鹭起，画图难足。(归帆 一作：征帆)</p>
                  
@@ -57,17 +57,42 @@
 
         </div>
     </div>
-    <div class="mobile column">
-        <div class="bottom content">
-           中文诗歌 
-        </div>
-    </div>
 </div>
 
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
         </div>
     </body>
     
     
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
     </script>
     
 

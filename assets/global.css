@@ -88,7 +88,6 @@ body ::-webkit-scrollbar {
 
 
 #main .content {
-    padding-left: 1em;
     letter-spacing: 2px;
     font-size: 1.315rem;
     font-weight: 300;
@@ -130,11 +129,11 @@ body ::-webkit-scrollbar {
     display: none;
 }
 
-#main .mobile.column{
+#main .mobile {
     padding-left: 0!important;
     padding-right: 0!important;
     height: auto!important;
-    padding: 0!important;
+    padding-top: 1em!important;
 }
 
 #main #detail .bottom {
@@ -142,6 +141,34 @@ body ::-webkit-scrollbar {
     background: #333;
     color: #fff;
     text-align: center;
+}
+
+#main .mobile .end {
+    padding: 1em;
+    text-align: center;
+}
+
+#footer {
+    padding: 1em;
+    background: #80ac7b;
+    text-align: center;
+}
+
+#jinrishici-sentence {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#jinrishici-tag {
+    position: absolute;
+    font-size: 98px;
+    font-weight: 800;
+    opacity: 0.1;
+    text-align: center;
+    width: 100%;
+    right: 0;
+    left: 0;
 }
 
 

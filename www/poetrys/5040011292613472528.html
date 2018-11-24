@@ -36,7 +36,7 @@
                 姜夔
             </div>
 
-            <div class="content">
+            <div class="content" style="padding-left: 1em;">
                 
                 <p>余客武陵。湖北宪治在焉：古城野水，乔木参天。余与二三友，日荡舟其间。薄荷花而饮，意象幽闲，不类人境。秋水且涸。荷叶出地寻丈，因列坐其下，上不见日。清风徐来，绿云自动。间于疏处，窥见游人画船，亦一乐也。朅来吴兴。数得相羊荷花中，又夜泛西湖，光景奇绝。故以此句写之。</p>
                  
@@ -61,17 +61,42 @@
 
         </div>
     </div>
-    <div class="mobile column">
-        <div class="bottom content">
-           中文诗歌 
-        </div>
-    </div>
 </div>
 
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
         </div>
     </body>
     
     
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
     </script>
     
 

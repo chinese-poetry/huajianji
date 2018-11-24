@@ -36,7 +36,7 @@
                 赵崇祚
             </div>
 
-            <div class="content">
+            <div class="content" style="padding-left: 1em;">
                 
                 <p>武德军节度判官司欧陽炯[1]撰镂玉雕琼[2]，拟化工[3]而迥巧；裁花剪叶，夺春艳以争鲜。是以唱云谣则金母词清[4]，挹霞醴则穆王心醉[5]。名高《白雪》[6]，声声而自合鸾歌[7]；响遏行云，字字而偏谐凤律[8]。《杨柳》《大堤》[9]之句，乐府相传；《芙蓉》《曲渚》之篇，豪家自制。莫不争高门下，三千玳帽之簪[10]；竞富尊前，数十珊瑚之树[11]。则有绮筵公子，绣幌佳人，递叶叶之花笺，文抽丽锦；举纤纤之</p>
                  
@@ -117,17 +117,42 @@
 
         </div>
     </div>
-    <div class="mobile column">
-        <div class="bottom content">
-           中文诗歌 
-        </div>
-    </div>
 </div>
 
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
         </div>
     </body>
     
     
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
     </script>
     
 
