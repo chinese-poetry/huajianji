@@ -133,6 +133,8 @@ body ::-webkit-scrollbar {
 #main .mobile.column{
     padding-left: 0!important;
     padding-right: 0!important;
+    height: auto!important;
+    padding: 0!important;
 }
 
 #main #detail .bottom {
