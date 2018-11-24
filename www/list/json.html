@@ -1,0 +1,2566 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> json </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/container.min.css">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+    <link rel="stylesheet" href="../../assets/semantic/components/list.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/x_large_lLpY_13db00000f341262.jpg');">
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title" style="padding-left: 1em;">
+                json
+            </div>
+
+            <hr class="line" style="margin-left: 0;"/>
+            
+            <div class="meta content">
+                <p><a class="link under" href="../../">古诗十九首</a></p>
+            </div>
+
+                <div class="ui selection list">
+                
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李益</span> <a class="link" href="../../www/poetrys/8571081121881750383.html">江南曲</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张九龄</span> <a class="link" href="../../www/poetrys/3957687512171415469.html">感遇·江南有丹橘</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">祖咏</span> <a class="link" href="../../www/poetrys/109792399976443294.html">终南望余雪</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/6764670256748435482.html">下终南山过斛斯山人宿置酒</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张祜</span> <a class="link" href="../../www/poetrys/8076958025939885403.html">宫词·故国三千里</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/8597777475069292199.html">琵琶行 / 琵琶引</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/6251555516220372874.html">无题·昨夜星辰昨夜风</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/6114578239311369381.html">梦游天姥吟留别 / 梦游天姥山别东鲁诸公</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/6224941831077461056.html">老将行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">沈佺期</span> <a class="link" href="../../www/poetrys/4551896279196436273.html">杂诗三首·其三</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/1600768388073894797.html">新年作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/6648159519275625276.html">送梓州李使君</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/3686602973894275088.html">长恨歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4933021628087472456.html">隋宫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">常建</span> <a class="link" href="../../www/poetrys/8950160121972064813.html">宿王昌龄隐居</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/2018178261045543654.html">丹青引赠曹将军霸</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张祜</span> <a class="link" href="../../www/poetrys/4101598620887285855.html">题金陵渡</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4933021628087472456.html">隋宫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔颢</span> <a class="link" href="../../www/poetrys/7198382372333623587.html">行经华阴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/3334803999202974130.html">旅宿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">祖咏</span> <a class="link" href="../../www/poetrys/4530549785910155135.html">望蓟门</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/7527108829947412785.html">秋夜寄邱员外 / 秋夜寄丘二十二员外</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3817773906599790687.html">早发白帝城 / 白帝下江陵</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4333209967459936964.html">落花</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/956608526536842388.html">逢入京使</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">金昌绪</span> <a class="link" href="../../www/poetrys/1516192009245867124.html">春怨 / 伊州歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/2039965382858347099.html">送元二使安西 / 渭城曲</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/2619340302521860272.html">梦李白二首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/4231005637421945625.html">与高适薛据同登慈恩寺浮图</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/574454736673561316.html">奉济驿重送严公四韵</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/4332401536835269236.html">金陵酒肆留别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟郊</span> <a class="link" href="../../www/poetrys/7523862098837405196.html">游子吟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/2308173664377464966.html">清平调·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4887325353298095535.html">锦瑟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/477889373888298591.html">无题·相见时难别亦难</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/2748944473084670881.html">古意</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘禹锡</span> <a class="link" href="../../www/poetrys/7963321381756822727.html">西塞山怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/4720575132255094100.html">听蜀僧濬弹琴 / 听蜀僧浚弹琴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/8685895214106442241.html">筹笔驿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/8902480656128989303.html">咏怀古迹五首·其三</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3376148281126472198.html">月夜</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩愈</span> <a class="link" href="../../www/poetrys/8623300535465377839.html">石鼓歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/3736307875889353885.html">送灵澈上人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/6889756599319237873.html">早寒江上有怀 / 早寒有怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/953424630121456337.html">子夜吴歌·春歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5834356417901618364.html">桃源行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">丘为</span> <a class="link" href="../../www/poetrys/7357714472369435933.html">寻西山隐者不遇</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/5636700466361156322.html">寄扬州韩绰判官</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">权德舆</span> <a class="link" href="../../www/poetrys/9020760589656279407.html">玉台体</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">温庭筠</span> <a class="link" href="../../www/poetrys/797819976186548828.html">瑶瑟怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/8220720303644681064.html">清平调·名花倾国两相欢</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">马戴</span> <a class="link" href="../../www/poetrys/7371476134323714820.html">楚江怀古三首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/7144300997018442142.html">宿桐庐江寄广陵旧游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩偓</span> <a class="link" href="../../www/poetrys/3078418489869784221.html">已凉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/2370889098842929088.html">宿业师山房期丁大不至 / 宿业师山房待丁大不至</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/7651089050951302447.html">秋日登吴公台上寺远眺</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3862208433424746020.html">庐山谣寄卢侍御虚舟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/7596146138995065252.html">无题·凤尾香罗薄几重</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/6542069901520837767.html">春宿左省</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3002642029501032343.html">客至</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/7195851274584758631.html">旅夜书怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/2568416811836253536.html">月下独酌四首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳宗元</span> <a class="link" href="../../www/poetrys/3626261762250665785.html">溪居</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李隆基</span> <a class="link" href="../../www/poetrys/1935998338673460467.html">经邹鲁祭孔子而叹之</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/2603407634570453025.html">佳人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/9030718721418500067.html">将赴吴兴登乐游原一绝</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/7128020880984627800.html">寻南溪常山道人隐居 / 寻南溪常道士</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/8902480656128989426.html">咏怀古迹五首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/7666994046634590818.html">天末怀李白</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王之涣</span> <a class="link" href="../../www/poetrys/3519170410245980615.html">凉州词二首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳宗元</span> <a class="link" href="../../www/poetrys/3607061663284495103.html">渔翁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/6904721673918352242.html">青溪 / 过青溪水作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/6564253941821445096.html">丽人行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">温庭筠</span> <a class="link" href="../../www/poetrys/7856747537500466675.html">利州南渡</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/4633115767181585391.html">赤壁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/5529021213063790511.html">金陵图</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/5571508864449175372.html">清明日宴梅道士房</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/8595220842915892447.html">过香积寺</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陈子昂</span> <a class="link" href="../../www/poetrys/9085382385662626259.html">登幽州台歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/3832690374420568101.html">赋得暮雨送李胄 / 赋得暮雨送李曹</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贾岛</span> <a class="link" href="../../www/poetrys/8571835435058707396.html">寻隐者不遇 / 孙革访羊尊师诗</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/6978435806981787510.html">寄令狐郎中</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/4731292350861446507.html">遣怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4433037331144.html">蝉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陈陶</span> <a class="link" href="../../www/poetrys/5095498111161583946.html">陇西行四首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/7100655516176880741.html">淮上喜会梁川故人 / 淮上喜会梁州故人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦韬玉</span> <a class="link" href="../../www/poetrys/4625819790932758704.html">贫女</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/8526707393357988449.html">白雪歌送武判官归京</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/7314712851464270978.html">山居秋暝</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/3383572309856447123.html">杂诗</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">元稹</span> <a class="link" href="../../www/poetrys/4466202766452113997.html">行宫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/5529021207365797090.html">金谷园</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/2619340302521860132.html">梦李白二首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5139300180330216314.html">秋夜曲</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5106774165273555287.html">酬郭给事</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5280072416964168816.html">竹里馆</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘禹锡</span> <a class="link" href="../../www/poetrys/109330606978858266.html">和乐天春词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/471309819493676710.html">古柏行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/2559503371827051420.html">东郊</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/8633305087471315038.html">过故人庄</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/2308173664377464842.html">清平调·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">高适</span> <a class="link" href="../../www/poetrys/2332288997185531734.html">燕歌行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/3642905149200367646.html">郡斋雨中与诸文士燕集</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3392183711104906327.html">行路难·其三</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">宋之问</span> <a class="link" href="../../www/poetrys/69281384688250142.html">渡汉江</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔颢</span> <a class="link" href="../../www/poetrys/3088711083633324129.html">长干行·家临九江水</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3552753420008401633.html">江南逢李龟年</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩愈</span> <a class="link" href="../../www/poetrys/3813721223887779164.html">谒衡岳庙遂宿岳寺题门楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/2333233085487148062.html">闻官军收河南河北</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">温庭筠</span> <a class="link" href="../../www/poetrys/3077340589613202245.html">苏武庙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张乔</span> <a class="link" href="../../www/poetrys/2709509868671481239.html">书边事</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜审言</span> <a class="link" href="../../www/poetrys/2339845924478849904.html">和晋陵陆丞早春游望</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">司空曙</span> <a class="link" href="../../www/poetrys/6889381788902106354.html">贼平后送人北归</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/7572602088503245620.html">夜归鹿门山歌 / 夜归鹿门歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/3084061200984841793.html">古从军行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王勃</span> <a class="link" href="../../www/poetrys/1421795953504107037.html">送杜少府之任蜀州 / 送杜少府之任蜀川</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">温庭筠</span> <a class="link" href="../../www/poetrys/5292550742950941479.html">送人东游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳宗元</span> <a class="link" href="../../www/poetrys/3551125279102904501.html">江雪</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王建</span> <a class="link" href="../../www/poetrys/1632017713245596664.html">新嫁娘词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/7949895698668897193.html">秋登兰山寄张五 / 九月九日岘山寄张子容</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟郊</span> <a class="link" href="../../www/poetrys/8328083284647051121.html">烈女操</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/69948855497782018.html">与诸子登岘山</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/7411245692478425814.html">哀江头</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘禹锡</span> <a class="link" href="../../www/poetrys/3048315414385475596.html">蜀先主庙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">马戴</span> <a class="link" href="../../www/poetrys/5288300620333613424.html">灞上秋居</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/6164837438927638883.html">望月有感</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张九龄</span> <a class="link" href="../../www/poetrys/86828654238575890.html">感遇十二首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/8879005564896538612.html">留别王侍御维 / 留别王维</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩翃</span> <a class="link" href="../../www/poetrys/7411408233907858502.html">同题仙游观</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/8950231365031334466.html">积雨辋川庄作 / 秋归辋川庄作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/4423706511143707642.html">蜀相</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4419503119701727646.html">送别 / 山中送别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/3247358918904618371.html">宿建德江</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/8902480656128983205.html">咏怀古迹五首·其四</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张籍</span> <a class="link" href="../../www/poetrys/4601481851561713745.html">没蕃故人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/3735157049719735439.html">送魏万之京</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3150866913348357823.html">怨情</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/3807766841430264018.html">琴歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张继</span> <a class="link" href="../../www/poetrys/6298470086457180258.html">枫桥夜泊</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">皇甫冉</span> <a class="link" href="../../www/poetrys/3347092072771119152.html">春思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/2556497418818426318.html">赠孟浩然</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/8902480656128989418.html">咏怀古迹五首·其五</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王湾</span> <a class="link" href="../../www/poetrys/6407486944054520583.html">次北固山下</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3347092072771119152.html">春思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/8516186506106283661.html">后宫词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/4368040630644242753.html">宣州谢脁楼饯别校书叔云</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张旭</span> <a class="link" href="../../www/poetrys/5834356357454417023.html">桃花溪</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">司空曙</span> <a class="link" href="../../www/poetrys/3515826280099475638.html">喜外弟卢纶见宿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">元结</span> <a class="link" href="../../www/poetrys/1798555001003303180.html">石鱼湖上醉歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/670604340413857391.html">韦讽录事宅观曹将军画马图</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4977821829141664744.html">韩碑</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张九龄</span> <a class="link" href="../../www/poetrys/1945307334045585396.html">望月怀远 / 望月怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩愈</span> <a class="link" href="../../www/poetrys/7421173414894919771.html">八月十五夜赠张功曹</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/6650564996385230098.html">岁暮归南山 / 归故园作 / 归终南山</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4836608427787267609.html">辋川闲居赠裴秀才迪</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">皎然</span> <a class="link" href="../../www/poetrys/6642430628423543364.html">寻陆鸿渐不遇</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">薛逢</span> <a class="link" href="../../www/poetrys/3003794013126039950.html">宫词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/6808494701407752896.html">听弹琴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳宗元</span> <a class="link" href="../../www/poetrys/163104719652904875.html">晨诣超师院读禅经</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/8172199150372455494.html">寄左省杜拾遗</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/8630757852883926867.html">送方外上人 / 送上人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3392183711104906334.html">行路难·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/5302484841978198627.html">送杨氏女</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4472986966384101192.html">渭川田家</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/742127712965271083.html">登金陵凤凰台</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/617681470172821981.html">章台夜思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘昚虚</span> <a class="link" href="../../www/poetrys/4918429546821340049.html">阙题</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3347092072771120950.html">春望</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘方平</span> <a class="link" href="../../www/poetrys/3347092072771119109.html">春怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘禹锡</span> <a class="link" href="../../www/poetrys/8124261335459097505.html">乌衣巷</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/5347829105319561492.html">送陈章甫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">元稹</span> <a class="link" href="../../www/poetrys/6981122774384289797.html">遣悲怀三首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4551896279196436406.html">杂诗三首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔曙</span> <a class="link" href="../../www/poetrys/1001925990363262461.html">九日登望仙台呈刘明府容</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/1236394263723713723.html">泊秦淮</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/4785475203289588697.html">长相思·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/7919398324979190533.html">听董大弹胡笳声兼寄语弄房给事</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/2068393075461915185.html">夏日南亭怀辛大</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王翰</span> <a class="link" href="../../www/poetrys/3519170410245980615.html">凉州词二首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/8454022848775387301.html">北青萝</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳中庸</span> <a class="link" href="../../www/poetrys/2553985159465778143.html">征人怨 / 征怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢纶</span> <a class="link" href="../../www/poetrys/6881462044794584546.html">和张仆射塞下曲·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">西鄙人</span> <a class="link" href="../../www/poetrys/6221668252672945400.html">哥舒歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3392183711104906450.html">行路难·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/7815154296256766496.html">赠卫八处士</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/368528366934914780.html">奉和圣制从蓬莱向兴庆阁道中留春雨中春望之作应制</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/1036323337892100836.html">兵车行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李益</span> <a class="link" href="../../www/poetrys/5013616266141744936.html">喜见外弟又言别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/7094861601419965640.html">寄李儋元锡</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">綦毋潜</span> <a class="link" href="../../www/poetrys/4934296660682169736.html">春泛若耶溪</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/5166791355578984306.html">夕次盱眙县</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/4909360398507733932.html">初发扬子寄元大校书</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢纶</span> <a class="link" href="../../www/poetrys/6881462044794584423.html">和张仆射塞下曲·其三</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/3347092072771133125.html">春雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/2815470493710460775.html">轮台歌奉送封大夫出师西征</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/6116585410359553567.html">八阵图</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/5007134008058924544.html">风雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">许浑</span> <a class="link" href="../../www/poetrys/1351815680733188805.html">早秋三首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/3686602962495227329.html">长信怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/2554077405439401749.html">赠别二首</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">郑畋</span> <a class="link" href="../../www/poetrys/3234094477592360422.html">马嵬坡</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3006354015193965539.html">宿府</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/7290515387554071836.html">归嵩山作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/1288897672979216386.html">塞下曲</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔涂</span> <a class="link" href="../../www/poetrys/1695346377527840821.html">孤雁二首·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张祜</span> <a class="link" href="../../www/poetrys/5343449771506755946.html">赠内人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张祜</span> <a class="link" href="../../www/poetrys/5314476658876150684.html">集灵台·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/1238509979699406950.html">长沙过贾谊宅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/8974164420084948440.html">秦中感秋寄远上人 / 秦中寄远上人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/1007209335645172663.html">观公孙大娘弟子舞剑器行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/4257895044838750851.html">春宫曲</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/9090073980161360280.html">走马川行奉送出师西征 / 走马川行奉送封大夫出师西征</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/6820340598349517789.html">月夜忆舍弟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/8330259915409765675.html">望洞庭湖赠张丞相 / 临洞庭湖赠张丞相</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5158811488398062737.html">酬张少府</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/8008921561009917496.html">饯别王十一南游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔颢</span> <a class="link" href="../../www/poetrys/2089533708588866486.html">黄鹤楼 / 登黄鹤楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">元结</span> <a class="link" href="../../www/poetrys/5559447037821668276.html">贼退示官吏</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢纶</span> <a class="link" href="../../www/poetrys/5326895643807262967.html">晚次鄂州</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3321714602763275187.html">关山月</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">许浑</span> <a class="link" href="../../www/poetrys/8873680937754782354.html">秋日赴阙题潼关驿楼 / 行次潼关逢魏扶东归</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4280231962253721441.html">终南山</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/4632603831689781769.html">赠别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/953424631887448199.html">子夜吴歌·夏歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/6153567424668951653.html">草 / 赋得古原草送别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张祜</span> <a class="link" href="../../www/poetrys/5314476658876150544.html">集灵台·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱庆馀</span> <a class="link" href="../../www/poetrys/637017870090062765.html">近试上张籍水部 / 近试上张水部 / 闺意献张水部</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">钱起</span> <a class="link" href="../../www/poetrys/7802643716099040387.html">谷口书斋寄杨补阙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/3700542818228172008.html">出塞二首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩翃</span> <a class="link" href="../../www/poetrys/4283952367585778958.html">酬程延秋夜即事见赠</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜牧</span> <a class="link" href="../../www/poetrys/3990935968238976438.html">秋夕</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/2563343396945111333.html">为有</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/7616819205850659081.html">寄全椒山中道士</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/4914461514278337348.html">闺怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/391386038539267517.html">夜泊牛渚怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/647124319372847399.html">登岳阳楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳宗元</span> <a class="link" href="../../www/poetrys/5590403006943820465.html">登柳州城楼寄漳汀封连四州</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/4777756695033060083.html">野望</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">元稹</span> <a class="link" href="../../www/poetrys/6981122774384289929.html">遣悲怀三首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔涂</span> <a class="link" href="../../www/poetrys/333988511862969301.html">除夜 / 巴山道中除夜书怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/6862302633248338015.html">送友人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/2473657702959754917.html">静夜思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/4488937724434877736.html">长安遇冯著</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩愈</span> <a class="link" href="../../www/poetrys/3029138161548204002.html">山石</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜荀鹤</span> <a class="link" href="../../www/poetrys/4257895044838751321.html">春宫怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/4896515370468636191.html">至德二载甫自京金光门出问道归凤翔乾元初…有悲往事</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/1211709048371183075.html">同从弟南斋玩月忆山阴崔少府</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/7411245685394433669.html">哀王孙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王之涣</span> <a class="link" href="../../www/poetrys/631444290589898218.html">登鹳雀楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李颀</span> <a class="link" href="../../www/poetrys/8021516320370187305.html">听安万善吹觱篥歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/2080887523636661521.html">无题·重帏深下莫愁堂</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/2978577882368854805.html">嫦娥</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘方平</span> <a class="link" href="../../www/poetrys/3376148281126472198.html">月夜</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孟浩然</span> <a class="link" href="../../www/poetrys/3347092072771120766.html">春晓</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/8564705443810944972.html">终南别业</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/4628251733351549223.html">贾生</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢纶</span> <a class="link" href="../../www/poetrys/6881462044794578357.html">和张仆射塞下曲·其四</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">骆宾王</span> <a class="link" href="../../www/poetrys/4896654105327973661.html">咏蝉 / 在狱咏蝉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/2835829651299836868.html">问刘十九</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/6420116286679835045.html">汉江临泛 / 汉江临眺</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/955931294356395274.html">黄鹤楼送孟浩然之广陵</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/4902520407089602002.html">渡荆门送别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张九龄</span> <a class="link" href="../../www/poetrys/86828654238576030.html">感遇十二首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/6085946929268988932.html">蜀道难</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/5529021235303837074.html">金缕衣</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/7978828448965545488.html">九月九日忆山东兄弟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/2679952067041089796.html">凉思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/8902480656128989310.html">咏怀古迹五首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李益</span> <a class="link" href="../../www/poetrys/3194969989014654173.html">夜上受降城闻笛</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">戴叔伦</span> <a class="link" href="../../www/poetrys/2730589653739391166.html">客夜与故人偶集 / 江乡故人偶集客舍</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">裴迪</span> <a class="link" href="../../www/poetrys/9033452489401947940.html">崔九欲往南山马上口号与别 / 留别王维 / 送崔九</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4718748349227590890.html">送别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/1193732133042876698.html">江州重别薛六柳八二员外</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/4580684921443799518.html">送綦毋潜落第还乡</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">钱起</span> <a class="link" href="../../www/poetrys/394059470016143244.html">送僧归日本</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">崔颢</span> <a class="link" href="../../www/poetrys/4649482749557632758.html">长干行·君家何处住</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">常建</span> <a class="link" href="../../www/poetrys/5456010178171695431.html">题破山寺后禅院</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/2093764773146253175.html">洛阳女儿行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岑参</span> <a class="link" href="../../www/poetrys/8636911927484582849.html">奉和中书舍人贾至早朝大明宫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/6283473139195042365.html">夜雨寄北</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘长卿</span> <a class="link" href="../../www/poetrys/1129089703837343878.html">自夏口至鹦鹉洲夕望岳阳寄源中丞</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">高适</span> <a class="link" href="../../www/poetrys/4677968836329737557.html">送李少府贬峡中王少府贬长沙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5193631121325647691.html">鹿柴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张泌</span> <a class="link" href="../../www/poetrys/3006994064351116532.html">寄人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/3940797611865440878.html">无题·飒飒东风细雨来</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/953424623891387475.html">子夜吴歌·秋歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李端</span> <a class="link" href="../../www/poetrys/2758160537668804315.html">听筝</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/4785475203289588565.html">长相思·其二</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">司空曙</span> <a class="link" href="../../www/poetrys/7559555639486909400.html">云阳馆与韩绅宿别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/1234649851435401398.html">将进酒</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/118831103426350004.html">乐游原 / 登乐游原</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3882391316381981547.html">登高</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3378580297785505568.html">望岳</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱庆馀</span> <a class="link" href="../../www/poetrys/463689451103713934.html">宫词 / 宫中词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3247265740834562553.html">寄韩谏议注</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/9020760574614225236.html">玉阶怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">钱起</span> <a class="link" href="../../www/poetrys/7505586141838416209.html">赠阙下裴舍人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">宋之问</span> <a class="link" href="../../www/poetrys/7116838814835902040.html">题大庾岭北驿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩翃</span> <a class="link" href="../../www/poetrys/3008786029549036075.html">寒食</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/3973307713948457659.html">无题·来是空言去绝踪</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/3898391361307006711.html">相思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/4915357530413339101.html">阁夜</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/1648912627140520724.html">芙蓉楼送辛渐</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺知章</span> <a class="link" href="../../www/poetrys/8008968982064206911.html">回乡偶书二首·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">沈佺期</span> <a class="link" href="../../www/poetrys/2121043509542765558.html">古意呈补阙乔知之 / 独不见</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张九龄</span> <a class="link" href="../../www/poetrys/86828654238577991.html">感遇十二首·其四</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李商隐</span> <a class="link" href="../../www/poetrys/3816214869656253824.html">瑶池</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/3882391316382001359.html">登楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/5764184613746886467.html">别房太尉墓</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢纶</span> <a class="link" href="../../www/poetrys/6881462044794584430.html">和张仆射塞下曲·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦应物</span> <a class="link" href="../../www/poetrys/7294582795237853531.html">滁州西涧</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/6020933741866120332.html">西施咏</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/7591537191346768783.html">和贾舍人早朝大明宫之作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/7313664801497588887.html">塞上曲·其一</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢纶</span> <a class="link" href="../../www/poetrys/2804362666848409387.html">李端公 / 送李端</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/953424634096422076.html">子夜吴歌·冬歌</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">元稹</span> <a class="link" href="../../www/poetrys/6981122774384289920.html">遣悲怀三首·其三</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘克庄</span> <a class="link" href="../../www/poetrys/4785475207747614750.html">长相思·惜梅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩疁</span> <a class="link" href="../../www/poetrys/4955575277587656396.html">浪淘沙·莫上玉楼看</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">孙光宪</span> <a class="link" href="../../www/poetrys/8939705641437717917.html">浣溪沙·蓼岸风多橘柚香</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/9097158614556036861.html">清平乐·村居</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">赵佶</span> <a class="link" href="../../www/poetrys/4473617338536269865.html">燕山亭·北行见杏花</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">冯延巳</span> <a class="link" href="../../www/poetrys/8885255300049480876.html">清平乐·雨晴烟晚</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/1521100877090142723.html">思帝乡·春日游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩元吉</span> <a class="link" href="../../www/poetrys/7640592766946185424.html">霜天晓角·题采石蛾眉亭</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/1293089773949713236.html">浪淘沙令·帘外雨潺潺</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">文及翁</span> <a class="link" href="../../www/poetrys/1980594011393379062.html">贺新郎·西湖</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/293354561324246802.html">贺新郎·甚矣吾衰矣</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">范仲淹</span> <a class="link" href="../../www/poetrys/4005105671467656620.html">苏幕遮·怀旧</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">仲殊</span> <a class="link" href="../../www/poetrys/1222648172341526684.html">诉衷情·宝月山作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韩缜</span> <a class="link" href="../../www/poetrys/8076615171385502919.html">凤箫吟·锁离愁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">徐昌图</span> <a class="link" href="../../www/poetrys/4390351537545534802.html">临江仙·饮散离亭西去</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/2403102614696635746.html">安公子·远岸收残雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">牛峤</span> <a class="link" href="../../www/poetrys/7978922653625534656.html">忆江南·衔泥燕</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李璟</span> <a class="link" href="../../www/poetrys/7669910885249089966.html">摊破浣溪沙·菡萏香销翠叶残</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">蒋捷</span> <a class="link" href="../../www/poetrys/3836202226401418969.html">虞美人·听雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/1673948593695388811.html">长相思·汴水流</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/5683710792439467110.html">菩萨蛮·劝君今夜须沉醉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/8929408288683385266.html">永遇乐·京口北固亭怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱淑真</span> <a class="link" href="../../www/poetrys/6570342409890350808.html">眼儿媚·迟迟春日弄轻柔</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/7518549287142450210.html">浪淘沙·借问江潮与海水</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/335615596006619270.html">摸鱼儿·更能消几番风雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/5177694195993353439.html">暗香·旧时月色</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/5905146425601240803.html">三五七言 / 秋风词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张先</span> <a class="link" href="../../www/poetrys/5635719450697293534.html">天仙子·水调数声持酒听</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王安石</span> <a class="link" href="../../www/poetrys/8222840234347019013.html">桂枝香·金陵怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岳飞</span> <a class="link" href="../../www/poetrys/4619464955541217132.html">满江红·写怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晁补之</span> <a class="link" href="../../www/poetrys/5732589665896790117.html">摸鱼儿·东皋寓居</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">石孝友</span> <a class="link" href="../../www/poetrys/2262045198900131874.html">卜算子·见也如何暮</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张孝祥</span> <a class="link" href="../../www/poetrys/6605092207945189932.html">水调歌头·和庞佑父</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">曹勋</span> <a class="link" href="../../www/poetrys/8477847650909911372.html">饮马歌·边头春未到</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">赵长卿</span> <a class="link" href="../../www/poetrys/2601689421044984018.html">临江仙·暮春</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/7464776805003500785.html">虞美人·疏篱曲径田家小</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄庭坚</span> <a class="link" href="../../www/poetrys/807976093028298219.html">水调歌头·游览</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄孝迈</span> <a class="link" href="../../www/poetrys/5968890890250501768.html">湘春夜月·近清明</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/7050666824324024014.html">浣溪沙·簌簌衣巾落枣花</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/3962385757024575970.html">西江月·顷在黄州</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/4798813733438049770.html">八六子·倚危亭</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/892442794159371977.html">夜游宫·叶下斜阳照水</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陆游</span> <a class="link" href="../../www/poetrys/4311360345372166130.html">卜算子·咏梅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李珣</span> <a class="link" href="../../www/poetrys/6923736998277752042.html">巫山一段云·古庙依青嶂</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陆游</span> <a class="link" href="../../www/poetrys/4709164969135942906.html">诉衷情·当年万里觅封侯</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/1682640706056635718.html">长相思·一重山</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/7038945146310128768.html">少年游·并刀如水</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周紫芝</span> <a class="link" href="../../www/poetrys/8277101229950838853.html">鹧鸪天·一点残红欲尽时</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘克庄</span> <a class="link" href="../../www/poetrys/3566437898123107154.html">沁园春·答九华叶贤良</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">时彦</span> <a class="link" href="../../www/poetrys/8248553933630971984.html">青门饮·寄宠人</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/3384893614037188480.html">玉楼春·桃溪不作从容住</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/5134587536826688859.html">杵声齐·砧面莹</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄裳</span> <a class="link" href="../../www/poetrys/2295090578775895089.html">减字木兰花·竞渡</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/5430875019884390223.html">相见欢·林花谢了春红</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴文英</span> <a class="link" href="../../www/poetrys/4784613182922015179.html">风入松·听风听雨过清明</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/5096929254826917519.html">丑奴儿·书博山道中壁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李元膺</span> <a class="link" href="../../www/poetrys/7909604949491355399.html">洞仙歌·雪云散尽</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄庭坚</span> <a class="link" href="../../www/poetrys/903263628414647695.html">清平乐·春归何处</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/3654918176722440653.html">醉花阴·薄雾浓云愁永昼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/7368606981504550302.html">蝶恋花·伫倚危楼风细细</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/1041672613141481573.html">临江仙·夜饮东坡醒复醉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">严仁</span> <a class="link" href="../../www/poetrys/7589941866768511157.html">玉楼春·春思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/8545681523836730248.html">虞美人·春花秋月何时了</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/199919171913034305.html">捣练子令·深院静</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/1787522476405082216.html">定风波·自春来</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">蒋捷</span> <a class="link" href="../../www/poetrys/5247613953989051541.html">一剪梅·舟过吴江</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/9049659087666297180.html">南乡子·登京口北固亭有怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/4225270551747882578.html">石州引·薄雨初寒</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/6504522103826613959.html">如梦令·常记溪亭日暮</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/6612911120821718568.html">浪淘沙·把酒祝东风</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/1089466432998405396.html">如梦令·昨夜雨疏风骤</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/3498925355823678608.html">念奴娇·闹红一舸</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">房舜卿</span> <a class="link" href="../../www/poetrys/6469752063560966675.html">忆秦娥·与君别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/8071956180460900286.html">南歌子·天上星河转</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴文英</span> <a class="link" href="../../www/poetrys/7601611723537149564.html">莺啼序·春晚感怀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">谢逸</span> <a class="link" href="../../www/poetrys/976426318122052693.html">江神子·杏花村馆酒旗风</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘辰翁</span> <a class="link" href="../../www/poetrys/1521244773089223718.html">兰陵王·丙子送春</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/388410989895438992.html">临江仙·梦后楼台高锁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘辰翁</span> <a class="link" href="../../www/poetrys/1644317540878752821.html">西江月·新秋写兴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王清惠</span> <a class="link" href="../../www/poetrys/695048027697093173.html">满江红·题南京夷山驿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏殊</span> <a class="link" href="../../www/poetrys/366872390819200403.html">清平乐·红笺小字</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张孝祥</span> <a class="link" href="../../www/poetrys/7353505183098316565.html">西江月·阻风山峰下</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/3011729020054515154.html">鹧鸪天·己酉之秋苕溪记所见</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/6737791319482873951.html">西江月·世事一场大梦</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/3795116427312913312.html">雨霖铃·寒蝉凄切</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陈亮</span> <a class="link" href="../../www/poetrys/1917515510082254885.html">水调歌头·送章德茂大卿使虏</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/6188139326658452395.html">花非花</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/6620643003690488350.html">青玉案·元夕</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/7188880979499950503.html">江城子·乙卯正月二十日夜记梦</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄公绍</span> <a class="link" href="../../www/poetrys/3392702042648459419.html">青玉案·年年社日停针线</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘禹锡</span> <a class="link" href="../../www/poetrys/9179080890510766216.html">潇湘神·斑竹枝</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/275200223765675802.html">乌夜啼·昨夜风兼雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/9212691382493002469.html">菩萨蛮·枕前发尽千般愿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/3231684110418519289.html">半死桐·重过阊门万事非</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杨无咎</span> <a class="link" href="../../www/poetrys/3658322768659371580.html">柳梢青·茅舍疏篱</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/7688923921332175220.html">念奴娇·赤壁怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/5022871712364882404.html">女冠子·昨夜夜半</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">俞国宝</span> <a class="link" href="../../www/poetrys/926739424920474980.html">风入松·一春长费买花钱</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/8082498557449537702.html">水龙吟·次韵章质夫杨花词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/1039026651983828698.html">水龙吟·过南剑双溪楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/953996437347797199.html">水调歌头·明月几时有</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/869377204689695202.html">点绛唇·蹴罢秋千</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">毛滂</span> <a class="link" href="../../www/poetrys/6555910597955325856.html">惜分飞·泪湿阑干花著露</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/2677754709386846653.html">长亭怨慢·渐吹尽</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王安石</span> <a class="link" href="../../www/poetrys/7301769805229751742.html">浪淘沙令·伊吕两衰翁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/8794637080354077261.html">蝶恋花·春景</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">皇甫松</span> <a class="link" href="../../www/poetrys/1901006555258664755.html">梦江南·兰烬落</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/7953313516347326719.html">忆江南·江南好</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/405701586015934644.html">定风波·莫听穿林打叶声</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">岳飞</span> <a class="link" href="../../www/poetrys/2337836270501801541.html">小重山·昨夜寒蛩不住鸣</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张孝祥</span> <a class="link" href="../../www/poetrys/6824543330714507090.html">六州歌头·长淮望断</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张先</span> <a class="link" href="../../www/poetrys/8005726202184990822.html">青门引·春思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">温庭筠</span> <a class="link" href="../../www/poetrys/5925396727302479439.html">望江南·梳洗罢</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">潘阆</span> <a class="link" href="../../www/poetrys/5102844246613942351.html">酒泉子·长忆观潮</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">宋祁</span> <a class="link" href="../../www/poetrys/7589941866768512711.html">玉楼春·春景</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/4388777560730975186.html">芳心苦·杨柳回塘</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱淑真</span> <a class="link" href="../../www/poetrys/8794637033733922035.html">蝶恋花·送春</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/7138839888176001135.html">洞仙歌·冰肌玉骨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">宋自逊</span> <a class="link" href="../../www/poetrys/7902421110011080986.html">蓦山溪·自述</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/4285514151453030228.html">迷仙引·才过笄年</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/647931192590093087.html">菩萨蛮·人人尽说江南好</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/9068248932574397523.html">鹧鸪天·彩袖殷勤捧玉钟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陈东甫</span> <a class="link" href="../../www/poetrys/1636385382296078525.html">长相思·花深深</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">范仲淹</span> <a class="link" href="../../www/poetrys/1368586544288072877.html">渔家傲·秋思</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/1783625105361978757.html">鹧鸪天·有客慨然谈功名因追念少年时事戏作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘过</span> <a class="link" href="../../www/poetrys/5576685085888129703.html">唐多令·芦叶满汀洲</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴潜</span> <a class="link" href="../../www/poetrys/8800944005348160865.html">江城子·示表侄刘国华</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张先</span> <a class="link" href="../../www/poetrys/5845939161612428471.html">千秋岁·数声鶗鴂</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">袁去华</span> <a class="link" href="../../www/poetrys/8770054689624675836.html">瑞鹤仙·郊原初过雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">史达祖</span> <a class="link" href="../../www/poetrys/6390281426493431438.html">双双燕·咏燕</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/1962847554946348243.html">齐天乐·蟋蟀</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张元干</span> <a class="link" href="../../www/poetrys/5862304820498559442.html">贺新郎·寄李伯纪丞相</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王安国</span> <a class="link" href="../../www/poetrys/9097158614823999168.html">清平乐·春晚</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/62549766626667426.html">蝶恋花·醉别西楼醒不记</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/2071503095124329603.html">满庭芳·山抹微云</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/7121706360039485807.html">行香子·树绕村庄</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/3336079460634249757.html">相见欢·无言独上西楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/4810786722563547058.html">清平乐·别来春半</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">范成大</span> <a class="link" href="../../www/poetrys/5295849491608889911.html">蝶恋花·春涨一篙添水面</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/8568292741739290379.html">清平乐·年年雪里</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/3857367271340718462.html">千秋岁·水边沙外</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/8721206726739230384.html">江城子·密州出猎</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/1070109005954298546.html">踏莎行·自沔东来丁未元日至金陵江上感梦而作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/9078014894578176077.html">渔家傲·近日门前溪水涨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李璟</span> <a class="link" href="../../www/poetrys/3770427115476804227.html">摊破浣溪沙·手卷真珠上玉钩</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/1790052568336595874.html">浣溪沙·五两竿头风欲平</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/6890124728879619748.html">鹧鸪天·寒日萧萧上琐窗</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陆游</span> <a class="link" href="../../www/poetrys/2429418265507593113.html">鹊桥仙·华灯纵博</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/7538703509958334916.html">浣溪沙·漠漠轻寒上小楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张耒</span> <a class="link" href="../../www/poetrys/3055725634085148261.html">秋蕊香·帘幕疏疏风透</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张孝祥</span> <a class="link" href="../../www/poetrys/6875849369484737576.html">念奴娇·过洞庭</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄机</span> <a class="link" href="../../www/poetrys/53930555867742478.html">霜天晓角·仪真江上夜泊</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陈亮</span> <a class="link" href="../../www/poetrys/6557383865243795074.html">水龙吟·春恨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">叶梦得</span> <a class="link" href="../../www/poetrys/4999733490415751560.html">点绛唇·绍兴乙卯登绝顶小亭</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏殊</span> <a class="link" href="../../www/poetrys/7805343260554673178.html">蝶恋花·槛菊愁烟兰泣露</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/8118512068011623644.html">永遇乐·彭城夜宿燕子楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘克庄</span> <a class="link" href="../../www/poetrys/4777875623474640521.html">贺新郎·送陈真州子华</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">温庭筠</span> <a class="link" href="../../www/poetrys/5560392546145145686.html">菩萨蛮·小山重叠金明灭</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴文英</span> <a class="link" href="../../www/poetrys/7553268826899746867.html">浣溪沙·门隔花深梦旧游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/1672288674563639080.html">菩萨蛮·书江西造口壁</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">蒋氏女</span> <a class="link" href="../../www/poetrys/7447628474903809143.html">减字木兰花·题雄州驿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/7937651981327554610.html">凤凰台上忆吹箫·香冷金猊</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吕本中</span> <a class="link" href="../../www/poetrys/4648482672214773769.html">采桑子·恨君不似江楼月</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/759988479243025263.html">破阵子·为陈同甫赋壮词以寄之</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王建</span> <a class="link" href="../../www/poetrys/1857270609745757639.html">宫中调笑·团扇</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">史达祖</span> <a class="link" href="../../www/poetrys/8460313796458833512.html">绮罗香·咏春雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">戴叔伦</span> <a class="link" href="../../www/poetrys/1666715509317912401.html">调笑令·边草</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/2040270231471233535.html">太常引·建康中秋夜为吕叔潜赋</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘克庄</span> <a class="link" href="../../www/poetrys/1980594059747504681.html">贺新郎·九日</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/6192955436417792752.html">青玉案·凌波不过横塘路</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/1517226419090687054.html">西江月·遣兴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张先</span> <a class="link" href="../../www/poetrys/7729086954082302135.html">醉垂鞭·双蝶绣罗裙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/1724160140141362865.html">清平乐·独宿博山王氏庵</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/6458652991855825245.html">忆秦娥·箫声咽</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李重元</span> <a class="link" href="../../www/poetrys/5684661952845191815.html">忆王孙·春词</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张抡</span> <a class="link" href="../../www/poetrys/3571965048631132166.html">踏莎行·秋入云山</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">牛希济</span> <a class="link" href="../../www/poetrys/1726557427490011427.html">生查子·新月曲如眉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱敦儒</span> <a class="link" href="../../www/poetrys/8188551287734794219.html">相见欢·金陵城上西楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄升</span> <a class="link" href="../../www/poetrys/9097158619810012672.html">清平乐·宫怨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/1650882370815127238.html">望海潮·东南形胜</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱服</span> <a class="link" href="../../www/poetrys/8104411125830773745.html">渔家傲·小雨纤纤风细细</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王雱</span> <a class="link" href="../../www/poetrys/2571971543461086005.html">眼儿媚·杨柳丝丝弄轻柔</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/5184725699667321459.html">踏莎行·候馆梅残</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄庭坚</span> <a class="link" href="../../www/poetrys/8829172403960569323.html">鹧鸪天·座中有眉山隐客史应之和前韵即席答之</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘过</span> <a class="link" href="../../www/poetrys/4862499023390002401.html">西江月·堂上谋臣尊俎</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/7666715311828756665.html">扬州慢·淮左名都</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/3337864794293120449.html">浣溪沙·游蕲水清泉寺</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杨万里</span> <a class="link" href="../../www/poetrys/3710340076712810088.html">好事近·七月十三日夜登万花川谷望月作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/3445211659298718076.html">阮郎归·旧香残粉似当初</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">冯延巳</span> <a class="link" href="../../www/poetrys/3196125831706973982.html">鹊踏枝·几日行云何处去</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陆游</span> <a class="link" href="../../www/poetrys/1287655202865356498.html">夜游宫·记梦寄师伯浑</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/7113939753505102577.html">鹧鸪天·小令尊前见玉箫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陈与义</span> <a class="link" href="../../www/poetrys/2836679869215402034.html">临江仙·夜登小阁忆洛中旧游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李好古</span> <a class="link" href="../../www/poetrys/871286565919845299.html">谒金门·花过雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张孝祥</span> <a class="link" href="../../www/poetrys/6159082452578457880.html">西江月·问讯湖边春色</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/6072806640339986565.html">瑞龙吟·大石春景</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张舜民</span> <a class="link" href="../../www/poetrys/94239128550928966.html">卖花声·题岳阳楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/8375937438051763034.html">西河·大石金陵</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/1179432422329595728.html">更漏子·柳丝长</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/7200372225434017454.html">八声甘州·对潇潇暮雨洒江天</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢祖皋</span> <a class="link" href="../../www/poetrys/5719603890404352996.html">江城子·画楼帘幕卷新晴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏几道</span> <a class="link" href="../../www/poetrys/5245119021577645050.html">清平乐·留人不住</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘克庄</span> <a class="link" href="../../www/poetrys/3551719866802428196.html">玉楼春·戏林推</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/40699278862076254.html">思越人·紫府东风放夜时</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">白居易</span> <a class="link" href="../../www/poetrys/5386141240906159336.html">忆江南三首</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">程垓</span> <a class="link" href="../../www/poetrys/4365941384708838055.html">卜算子·独自上层楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王安石</span> <a class="link" href="../../www/poetrys/8609947282544636237.html">渔家傲·平岸小桥千嶂抱</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">冯延巳</span> <a class="link" href="../../www/poetrys/864595475465576037.html">谒金门·风乍起</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杨万里</span> <a class="link" href="../../www/poetrys/4498110452772045941.html">昭君怨·赋松上鸥</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">严蕊</span> <a class="link" href="../../www/poetrys/6737045769421915706.html">卜算子·不是爱风尘</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴潜</span> <a class="link" href="../../www/poetrys/8489144729034906115.html">满江红·送李御带珙</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/403603591218149691.html">一剪梅·红藕香残玉簟秋</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/3721436647107076924.html">蝶恋花·庭院深深深几许</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">汪藻</span> <a class="link" href="../../www/poetrys/4372665126548477692.html">点绛唇·新月娟娟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/3930667978060822789.html">虞美人·风回小院庭芜绿</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">冯延巳</span> <a class="link" href="../../www/poetrys/2952979776988502678.html">鹊踏枝·谁道闲情抛掷久</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/3747254885905483493.html">解语花·上元</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱敦儒</span> <a class="link" href="../../www/poetrys/7306838273347459698.html">鹧鸪天·西都作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/6131534204702454525.html">菩萨蛮·红楼别夜堪惆怅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">向子諲</span> <a class="link" href="../../www/poetrys/3651580325522587178.html">秦楼月·芳菲歇</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/4643406271398793803.html">点绛唇·丁未冬过吴松作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/3106785179577357227.html">卜算子·黄州定慧院寓居作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张昪</span> <a class="link" href="../../www/poetrys/1130499781397714629.html">离亭燕·一带江山如画</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">曹组</span> <a class="link" href="../../www/poetrys/3914397893570410714.html">蓦山溪·梅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">韦庄</span> <a class="link" href="../../www/poetrys/7603157000194696349.html">女冠子·四月十七</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/5186017820745975927.html">生查子·元夕</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/2647177257065502378.html">蝶恋花·暖雨晴风初破冻</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱淑真</span> <a class="link" href="../../www/poetrys/85001512524818109.html">谒金门·春半</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/5913226648907331228.html">望江南·天上月</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">仲殊</span> <a class="link" href="../../www/poetrys/6541134026560167486.html">南柯子·十里青山远</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/4655126337646901652.html">武陵春·春晚</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">姜夔</span> <a class="link" href="../../www/poetrys/4712666968881990196.html">疏影·苔枝缀玉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">顾夐</span> <a class="link" href="../../www/poetrys/443356701005242408.html">诉衷情·永夜抛人何处去</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/5441984469600152880.html">江城子·西城杨柳弄春柔</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴文英</span> <a class="link" href="../../www/poetrys/2228394988440304136.html">唐多令·惜别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李之仪</span> <a class="link" href="../../www/poetrys/7566136550979561275.html">卜算子·我住长江头</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王炎</span> <a class="link" href="../../www/poetrys/4264335240038568060.html">南柯子·山冥云阴重</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/8794637079406113860.html">蝶恋花·早行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陆游</span> <a class="link" href="../../www/poetrys/7232085337660447161.html">钗头凤·红酥手</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">皇甫松</span> <a class="link" href="../../www/poetrys/6495342731761802506.html">采莲子·菡萏香莲十顷陂</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/7699590078027521078.html">诉衷情·眉意</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">戴复古</span> <a class="link" href="../../www/poetrys/4502495538964659619.html">柳梢青·岳阳楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">贺铸</span> <a class="link" href="../../www/poetrys/5389511926790740234.html">六州歌头·少年侠气</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏殊</span> <a class="link" href="../../www/poetrys/3348439448188925248.html">浣溪沙·一向年光有限身</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张炎</span> <a class="link" href="../../www/poetrys/8946173683425958570.html">八声甘州·记玉关踏雪事清游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张炎</span> <a class="link" href="../../www/poetrys/3985794605235342752.html">清平乐·候蛩凄断</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/411516389996039841.html">望海潮·洛阳怀古</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏殊</span> <a class="link" href="../../www/poetrys/7503291388354632482.html">山亭柳·赠歌者</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晁补之</span> <a class="link" href="../../www/poetrys/435448473473794116.html">盐角儿·亳社观梅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/2600695230442303710.html">鹊踏枝·叵耐灵鹊多谩语</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/712083900015647308.html">踏莎行·郴州旅舍</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/7073145383951124946.html">六丑·落花</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">朱敦儒</span> <a class="link" href="../../www/poetrys/6323767306674424856.html">好事近·摇首出红尘</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">秦观</span> <a class="link" href="../../www/poetrys/3668677063973982239.html">鹊桥仙·纤云弄巧</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">叶清臣</span> <a class="link" href="../../www/poetrys/2392660537056921701.html">贺圣朝·留别</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">方岳</span> <a class="link" href="../../www/poetrys/1581027662356548118.html">水调歌头·平山堂用东坡韵</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">叶梦得</span> <a class="link" href="../../www/poetrys/1617296224260752465.html">水调歌头·秋色渐将晚</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王禹偁</span> <a class="link" href="../../www/poetrys/4633537776199982039.html">点绛唇·感兴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">柳永</span> <a class="link" href="../../www/poetrys/5222974461201722747.html">鹤冲天·黄金榜上</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">欧阳修</span> <a class="link" href="../../www/poetrys/7413684103932891818.html">渔家傲·花底忽闻敲两桨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏殊</span> <a class="link" href="../../www/poetrys/1110188653455725890.html">浣溪沙·一曲新词酒一杯</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/3810656796088947601.html">满庭芳·夏日溧水无想山作</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王观</span> <a class="link" href="../../www/poetrys/2644471481751308926.html">卜算子·送鲍浩然之浙东</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">侯蒙</span> <a class="link" href="../../www/poetrys/9097797294209362711.html">临江仙·未遇行藏谁肯信</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张志和</span> <a class="link" href="../../www/poetrys/6487520786837384941.html">渔歌子·西塞山前白鹭飞</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/1986944943125301337.html">兰陵王·柳</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/8809286759035309532.html">定风波·南海归赠王定国侍人寓娘</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/1399730594957819502.html">西江月·夜行黄沙道中</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">寇准</span> <a class="link" href="../../www/poetrys/6478026630236030511.html">踏莎行·春暮</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">林逋</span> <a class="link" href="../../www/poetrys/3845536780068618396.html">相思令·吴山青</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">薛昭蕴</span> <a class="link" href="../../www/poetrys/6778327826246596873.html">浣溪沙·红蓼渡头秋正雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">唐婉</span> <a class="link" href="../../www/poetrys/7244233381580493332.html">钗头凤·世情薄</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">冯延巳</span> <a class="link" href="../../www/poetrys/487315389599164939.html">长命女·春日宴</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李白</span> <a class="link" href="../../www/poetrys/3736147046517065607.html">菩萨蛮·平林漠漠烟如织</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘禹锡</span> <a class="link" href="../../www/poetrys/1201364365345498723.html">竹枝词·山桃红花满上头</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/8375128377038127209.html">渔家傲·天接云涛连晓雾</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">张元干</span> <a class="link" href="../../www/poetrys/473365488707344146.html">贺新郎·送胡邦衡待制赴新州</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">蔡伸</span> <a class="link" href="../../www/poetrys/6280581714771434230.html">苍梧谣·天</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李清照</span> <a class="link" href="../../www/poetrys/9171814624693911913.html">声声慢·寻寻觅觅</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢炳</span> <a class="link" href="../../www/poetrys/4439782091156765937.html">减字木兰花·莎衫筠笠</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">万俟咏</span> <a class="link" href="../../www/poetrys/1002651770511598434.html">三台·清明应制</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">吴文英</span> <a class="link" href="../../www/poetrys/3952483173077080486.html">八声甘州·灵岩陪庾幕诸公游</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">周邦彦</span> <a class="link" href="../../www/poetrys/2496673038232906976.html">苏幕遮·燎沉香</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李煜</span> <a class="link" href="../../www/poetrys/6151607010528317726.html">破阵子·四十年来家国</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">晏殊</span> <a class="link" href="../../www/poetrys/7242748997822877244.html">破阵子·春景</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">黄庭坚</span> <a class="link" href="../../www/poetrys/2390892505622753196.html">念奴娇·断虹霁雨</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">卢祖皋</span> <a class="link" href="../../www/poetrys/1338618791301138117.html">宴清都·初春</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">李珣</span> <a class="link" href="../../www/poetrys/9000231529630643298.html">南乡子·乘彩舫</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">刘克庄</span> <a class="link" href="../../www/poetrys/5626138124629508281.html">卜算子·片片蝶衣轻</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">陆游</span> <a class="link" href="../../www/poetrys/8002606008623273948.html">秋波媚·七月十六日晚登高兴亭望长安南山</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">辛弃疾</span> <a class="link" href="../../www/poetrys/3166277207822440895.html">贺新郎·别茂嘉十二弟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/5735876314116281608.html">东城高且长</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/3817691649908041092.html">驱车上东门</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/8679370449342508297.html">青青陵上柏</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/3354771074559235187.html">孟冬寒气至</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/4661722623246996807.html">冉冉孤生竹</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/6522317485438993970.html">生年不满百</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/7533546162462448427.html">今日良宴会</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/3689968813968552864.html">去者日以疏</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/5290393532718229215.html">客从远方来</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/6568659323827667727.html">凛凛岁云暮</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/8667122922807226519.html">回车驾言迈</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/4763007441549821174.html">迢迢牵牛星</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/6155343100684961614.html">西北有高楼</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/559112469404715058.html">明月何皎皎</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/6469274125269688348.html">涉江采芙蓉</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/6644408736038582224.html">行行重行行</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/544339361200565856.html">明月皎夜光</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/4933894327954852878.html">庭中有奇树</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">佚名</span> <a class="link" href="../../www/poetrys/8698512558232638231.html">青青河畔草</a></p>
+                    </div>
+                 
+                </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+    
+    
+    </script>
+    
+
+</html>
