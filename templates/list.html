@@ -3,33 +3,33 @@
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href="/assets/semantic/components/container.min.css">
-    <link rel="stylesheet" href="/assets/semantic/components/grid.min.css">
-    <link rel="stylesheet" href="/assets/semantic/components/list.min.css">
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/container.min.css">
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/grid.min.css">
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/list.min.css">
 {% endblock %}
 
 {% block main %}
 <div id="detail" class="ui stackable two column grid">
     <div class="zuo column">
-        <div class="cover" style="background-image: url('/images/{{image}}');">
+        <div class="cover" style="background-image: url('{{root}}images/{{image}}');">
         </div>
     </div>
     <div class="you column">
         <div class="poetry">
-            <div class="title" style="padding-left: 1em;">
+            <div class="title">
                 {{ juan }}
             </div>
 
-            <hr class="line" align="right"/>
+            <hr class="line" style="margin-left: 0;"/>
             
             <div class="meta content">
-                <p><a href="/">花间集</a></p>
+                <p><a class="link under" href="{{root}}www/{{book}}.html">{{ book }}</a></p>
             </div>
 
                 <div class="ui selection list">
                 {% for poetry in poetrys %}
                     <div class="item content">
-                        <p>- <span style="color: #333;">{{ poetry.author }}</span> <a href="/www/poetrys/{{ poetry.id }}.html">{{ poetry.title }}</a></p>
+                        <p>- <span style="color: #333;">{{ poetry.author }}</span> <a class="link" href="{{root}}www/poetrys/{{ poetry.id }}.html">{{ poetry.title }}</a></p>
                     </div>
                  {% endfor %}
                 </div>

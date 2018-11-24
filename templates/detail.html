@@ -1,16 +1,15 @@
 {% extends "base.html" %}
-{% block title %} TEST {% endblock %}
+{% block title %} {{ poetry.title }} | {{ juan }} {% endblock %}
 
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href="/assets/semantic/components/container.min.css">
-    <link rel="stylesheet" href="/assets/semantic/components/grid.min.css">
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/grid.min.css">
 {% endblock %}
 
 {% block main %}
 <div id="detail" class="ui stackable two column grid">
     <div class="zuo column">
-        <div class="cover" style="background-image: url('/images/{{image}}');">
+        <div class="cover" style="background-image: url('{{root}}images/{{image}}');">
         </div>
     </div>
     <div class="you column">
@@ -28,11 +27,12 @@
                  {% endfor %}
             </div>
 
-            <hr class="line" align="right">
+            <hr class="line right">
 
             <div class="meta content">
-                <p><a class="link" href="/www/list/{{juan}}.html">{{juan}}</a></p>
-                <p><a href="/www/rhythmic/{{poetry.rhythmic}}.html">{{poetry.rhythmic}}</a></p>
+                <p><a class="link under" href="{{root}}www/list/{{juan}}.html">{{juan}}</a></p>
+                <p>{{poetry.rhythmic}}</p>
+                <p>{{poetry.dynasty}}</p>
             </div>
 
             {% if poetry.notes %}
@@ -44,6 +44,13 @@
                 {% endfor %}
             </div>
             {% endif %}
+
+
+        </div>
+    </div>
+    <div class="mobile column">
+        <div class="bottom content">
+           中文诗歌 
         </div>
     </div>
 </div>
