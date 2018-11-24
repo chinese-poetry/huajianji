@@ -75,7 +75,7 @@ for book, path, juan in paths:
     for poetry in poetrys:
         notes = []
 
-        poetry["id"] = str(hash(poetry["title"])).replace('-','')
+        poetry["id"] = str(hash(juan + poetry["title"])).replace('-','')
         
         for note in poetry["notes"]:
             if '--' in note:
