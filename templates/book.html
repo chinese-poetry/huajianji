@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %} {{ book.0 }} {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/container.min.css">
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/grid.min.css">
+    <link rel="stylesheet" href="{{root}}assets/semantic/components/list.min.css">
+{% endblock %}
+
+{% block main %}
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('{{root}}images/{{ image }}');">
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                {{ book.0 }}
+            </div>
+
+
+            <div class="content meta">
+                <p>{{ book.1 }}</p>
+                <p><a class="link under" href="{{root}}">主页</a></p>
+            </div>
+
+            <hr class="line" style="margin-left: 0;"/>
+
+            <div class="ui selection list">
+            {% for juan in juans %}
+                <div class="item content">
+                    <p><a class="link" href="{{root}}www/list/{{juan}}.html">{{ juan }}</a></p>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}
