@@ -151,10 +151,6 @@ body ::-webkit-scrollbar {
         position: unset;
     }
 
-    #main #detail .content {
-        padding: 0;
-    }
-
     #main .mobile {
         display: block;
     }
@@ -186,10 +182,6 @@ body ::-webkit-scrollbar {
         overflow: unset;
         height: auto;
         position: unset;
-    }
-
-    #main #detail .content {
-        padding: 0;
     }
 
     #main .mobile {
