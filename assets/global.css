@@ -94,6 +94,10 @@ body ::-webkit-scrollbar {
     line-height: 1.8em;
 }
 
+#main .content p {
+    line-height: 1.8285em;
+}
+
 #main #detail .line{
     height: 2px;
     width: 8em;
@@ -213,10 +217,6 @@ body ::-webkit-scrollbar {
         position: unset;
     }
 
-    #main .mobile {
-        display: block;
-    }
-
     #main #detail .cover {
         width: 100%;
         height: 100%;
@@ -230,5 +230,9 @@ body ::-webkit-scrollbar {
     #main #detail .you {
         padding: 1em;
         height: auto;
+    }
+
+    #main #notes {
+        display: none;
     }
 }

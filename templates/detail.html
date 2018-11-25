@@ -36,12 +36,14 @@
             </div>
 
             {% if poetry.notes %}
-            <h3 class="ui header">注释</h3>
+            <div id="notes">
+                <h3 class="ui header">注释</h3>
 
-            <div class="notes content">
-                {% for left, right in poetry.notes %}
-                <p>[{{ loop.index }}] 「{{ left }}」 {{ right }}</p>
-                {% endfor %}
+                <div class="notes content">
+                    {% for left, right in poetry.notes %}
+                    <p>[{{ loop.index }}] 「{{ left }}」 {{ right }}</p>
+                    {% endfor %}
+                </div>
             </div>
             {% endif %}
 
