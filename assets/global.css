@@ -223,7 +223,7 @@ body ::-webkit-scrollbar {
     }
 
     #main #detail .zuo {
-        max-height: 450px;
+        max-height: 50%;
         height: 50%;
     }
 
