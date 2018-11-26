@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 兰亭集序 / 兰亭序 | 高中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00055.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                兰亭集序 / 兰亭序
+            </div>
+            <div class="author">
+                王羲之
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹；又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。是日也，天朗气清，惠风和畅，仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。</p>
+                 
+                <p></p>
+                 
+                <p>夫人之相与，俯仰一世，或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，快然自足，不知老之将至。及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀。况修短随化，终期于尽。古人云：“死生亦大矣。”岂不痛哉！(不知老之将至 一作：曾不知老之将至)</p>
+                 
+                <p></p>
+                 
+                <p>每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔。悲夫！故列叙时人，录其所述，虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/高中文言文.html">高中文言文</a></p>
+                <p></p>
+                <p>魏晋</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

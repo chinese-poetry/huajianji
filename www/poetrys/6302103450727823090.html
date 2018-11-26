@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 孙权劝学 | 初中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00052.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                孙权劝学
+            </div>
+            <div class="author">
+                司马光 撰
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>初，权谓吕蒙曰：“卿今当涂掌事，不可不学！”蒙辞以军中多务。权曰：“孤岂欲卿治经为博士邪?但当涉猎，见往事耳。卿言多务，孰若孤？孤常读书，自以为大有所益。”蒙乃始就学。及鲁肃过寻阳，与蒙论议，大惊曰：“卿今者才略，非复吴下阿蒙！”蒙曰：“士别三日，即更刮目相待，大兄何见事之晚乎！”肃遂拜蒙母，结友而别。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/初中文言文.html">初中文言文</a></p>
+                <p></p>
+                <p>宋代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

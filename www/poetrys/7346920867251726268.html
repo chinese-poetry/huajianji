@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 口技 | 初中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00018.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                口技
+            </div>
+            <div class="author">
+                林嗣环
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>京中有善口技者。会宾客大宴，于厅事之东北角，施八尺屏障，口技人坐屏障中，一桌、一椅、一扇、一抚尺而已。众宾团坐。少顷，但闻屏障中抚尺一下，满坐寂然，无敢哗者。</p>
+                 
+                <p></p>
+                 
+                <p>遥闻深巷中犬吠，便有妇人惊觉欠伸，其夫呓语。既而儿醒，大啼。夫亦醒。妇抚儿乳，儿含乳啼，妇拍而呜之。又一大儿醒，絮絮不止。当是时，妇手拍儿声，口中呜声，儿含乳啼声，大儿初醒声，夫叱大儿声，一时齐发，众妙毕备。满坐宾客无不伸颈，侧目，微笑，默叹，以为妙绝。</p>
+                 
+                <p></p>
+                 
+                <p>未几，夫齁声起，妇拍儿亦渐拍渐止。微闻有鼠作作索索，盆器倾侧，妇梦中咳嗽。宾客意少舒，稍稍正坐。</p>
+                 
+                <p></p>
+                 
+                <p>忽一人大呼：“火起”，夫起大呼，妇亦起大呼。两儿齐哭。俄而百千人大呼，百千儿哭，百千犬吠。中间力拉崩倒之声，火爆声，呼呼风声，百千齐作；又夹百千求救声，曳屋许许声，抢夺声，泼水声。凡所应有，无所不有。虽人有百手，手有百指，不能指其一端；人有百口，口有百舌，不能名其一处也。于是宾客无不变色离席，奋袖出臂，两股战战，几欲先走。</p>
+                 
+                <p></p>
+                 
+                <p>忽然抚尺一下，群响毕绝。撤屏视之，一人、一桌、一椅、一扇、一抚尺而已。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/初中文言文.html">初中文言文</a></p>
+                <p></p>
+                <p>清代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

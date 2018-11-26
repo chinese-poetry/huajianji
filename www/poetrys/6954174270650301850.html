@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 观刈麦 | 初中古诗·九年级上册(课外) </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-yue-00004.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                观刈麦
+            </div>
+            <div class="author">
+                白居易
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>田家少闲月，五月人倍忙。</p>
+                 
+                <p>夜来南风起，小麦覆陇黄。</p>
+                 
+                <p>妇姑荷箪食，童稚携壶浆，</p>
+                 
+                <p>相随饷田去，丁壮在南冈。</p>
+                 
+                <p>足蒸暑土气，背灼炎天光，</p>
+                 
+                <p>力尽不知热，但惜夏日长。</p>
+                 
+                <p>复有贫妇人，抱子在其旁，</p>
+                 
+                <p>右手秉遗穗，左臂悬敝筐。</p>
+                 
+                <p>听其相顾言，闻者为悲伤。</p>
+                 
+                <p>家田输税尽，拾此充饥肠。</p>
+                 
+                <p>今我何功德？曾不事农桑。</p>
+                 
+                <p>吏禄三百石，岁晏有余粮，</p>
+                 
+                <p>念此私自愧，尽日不能忘。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/初中古诗·九年级上册(课外).html">初中古诗·九年级上册(课外)</a></p>
+                <p></p>
+                <p>唐代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

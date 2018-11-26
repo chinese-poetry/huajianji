@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 李贺小传 | 高中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/renrenxiaozhan-00018.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://zhan.renren.com/chinastyle?checked=true" target="blank">人人小站</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                李贺小传
+            </div>
+            <div class="author">
+                李商隐
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>京兆杜牧为李长吉集序，状长吉之奇甚尽，世传之。长吉姊嫁王氏者，语长吉之事尤备。</p>
+                 
+                <p></p>
+                 
+                <p>长吉细瘦，通眉，长指爪，能苦吟疾书。最先为昌黎韩愈所知。所与游者，王参元、杨敬之、权璩、崔植辈为密，每旦日出与诸公游，未尝得题然后为诗，如他人思量牵合，以及程限为意。恒从小奚奴，骑距驴，背一古破锦囊，遇有所得，即书投囊中。及暮归．太夫人使婢受囊出之，见所书多．辄曰：“是儿要当呕出心乃已尔。”上灯，与食。长吉从婢取书，研墨叠纸足成之，投他囊中。非大醉及吊丧日率如此，过亦不复省。王、杨辈时复来探取写去。长吉往往独骑往还京、洛，所至或时有著，随弃之，故沈子明家所余四卷而已。</p>
+                 
+                <p></p>
+                 
+                <p>长吉将死时，忽昼见一绯衣人，驾赤虬，持一板，书若太古篆或霹雳石文者，云当召长吉。长吉了不能读，欻下榻叩头，言：“阿弥老且病，贺不愿去。”绯衣人笑曰：“帝成白玉楼，立召君为记。天上差乐，不苦也。”长吉独泣，边人尽见之。少之，长吉气绝。常所居窗中，勃勃有烟气，闻行车嘒管之声。太夫人急止人哭，待之如炊五斗黍许时，长吉竟死。王氏姊非能造作谓长吉者，实所见如此。</p>
+                 
+                <p></p>
+                 
+                <p>呜呼，天苍苍而高也，上果有帝耶?帝果有苑囿、宫室、观阁之玩耶?苟信然，则天之高邈，帝之尊严，亦宜有人物文采愈此世者，何独眷眷于长吉而使其不寿耶?噫，又岂世所谓才而奇者，不独地上少，即天上亦不多耶?长吉生二十七年，位不过奉礼太常，时人亦多排摈毁斥之，又岂才而奇者，帝独重之，而人反不重耶?又岂人见会胜帝耶?</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/高中文言文.html">高中文言文</a></p>
+                <p></p>
+                <p>唐代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

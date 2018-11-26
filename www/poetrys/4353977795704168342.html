@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 晏子使楚 | 小学文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00043.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                晏子使楚
+            </div>
+            <div class="author">
+                刘向
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>一</p>
+                 
+                <p>晏子使楚。楚人以晏子短，楚人为小门于大门之侧而延晏子。晏子不入，曰：“使狗国者从狗门入，今臣使楚，不当从此门入。”傧者更道，从大门入。见楚王。王曰：“齐无人耶？”晏子对曰：“齐之临淄三百闾，张袂成阴，挥汗成雨，比肩继踵而在，何为无人？”王曰：“然则何为使予？”晏子对曰：“齐命使，各有所主：其贤者使使贤主，不肖者使使不肖主。婴最不肖，故宜使楚矣！”（张袂成阴 一作：张袂成帷）</p>
+                 
+                <p></p>
+                 
+                <p>二</p>
+                 
+                <p>晏子将使楚。楚王闻之，谓左右曰：“晏婴，齐之习辞者也。今方来，吾欲辱之，何以也？”左右对曰：“为其来也，臣请缚一人，过王而行，王曰：‘何为者也？’对曰：‘齐人也。’王曰：‘何坐？’曰：‘坐盗。’</p>
+                 
+                <p></p>
+                 
+                <p>三</p>
+                 
+                <p>晏子至，楚王赐晏子酒，酒酣，吏二缚一人诣王。王曰：“缚者曷为者也？”对曰：“齐人也，坐盗。”王视晏子曰：“齐人固善盗乎？”晏子避席对曰：“婴闻之，橘生淮南则为橘，生于淮北则为枳，叶徒相似，其实味不同。所以然者何？水土异也。今民生长于齐不盗，入楚则盗，得无楚之水土使民善盗耶？”王笑曰：“ 圣人非所与熙也，寡人反取病焉。”</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/小学文言文.html">小学文言文</a></p>
+                <p></p>
+                <p>两汉</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

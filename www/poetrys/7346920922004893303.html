@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 观潮 | 初中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00024.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                观潮
+            </div>
+            <div class="author">
+                周密
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>浙江之潮，天下之伟观也。自既望以至十八日为盛。方其远出海门，仅如银线；既而渐近，则玉城雪岭际天而来，大声如雷霆，震撼激射，吞天沃日，势极雄豪。杨诚斋诗云“海涌银为郭，江横玉系腰”者是也。</p>
+                 
+                <p></p>
+                 
+                <p>每岁京尹出浙江亭教阅水军，艨艟数百，分列两岸；既而尽奔腾分合五阵之势，并有乘骑弄旗标枪舞刀于水面者，如履平地。倏尔黄烟四起，人物略不相睹，水爆轰震，声如崩山。烟消波静，则一舸无迹，仅有“敌船”为火所焚，随波而逝。</p>
+                 
+                <p></p>
+                 
+                <p>吴儿善泅者数百，皆披发文身，手持十幅大彩旗，争先鼓勇，溯迎而上，出没于鲸波万仞中，腾身百变，而旗尾略不沾湿，以此夸能。</p>
+                 
+                <p></p>
+                 
+                <p>江干上下十余里间，珠翠罗绮溢目，车马塞途，饮食百物皆倍穹常时，而僦赁看幕，虽席地不容间也。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/初中文言文.html">初中文言文</a></p>
+                <p></p>
+                <p>宋代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

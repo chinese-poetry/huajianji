@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 狼三则 | 初中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00021.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                狼三则
+            </div>
+            <div class="author">
+                蒲松龄
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>其一</p>
+                 
+                <p>有屠人货肉归，日已暮，欻一狼来，瞰担上肉，似甚垂涎，随尾行数里。屠惧，示之以刃，少却；及走，又从之。屠无计，思狼所欲者肉，不如姑悬诸树而早取之。遂钩肉，翘足挂树间，示以空担。狼乃止。屠归。昧爽，往取肉，遥望树上悬巨物，似人缢死状。大骇，逡巡近视之，则死狼也。仰首细审，见狼口中含肉，钩刺狼腭，如鱼吞饵。时狼皮价昂，直十余金，屠小裕焉。缘木求鱼，狼则罹之，是可笑也。</p>
+                 
+                <p></p>
+                 
+                <p>其二</p>
+                 
+                <p>一屠晚归，担中肉尽，止有剩骨。途中两狼，缀行甚远。</p>
+                 
+                <p>屠惧，投以骨。一狼得骨止，一狼仍从。复投之，后狼止而前狼又至。骨已尽矣，而两狼之并驱如故。</p>
+                 
+                <p>屠大窘，恐前后受其敌。顾野有麦场，场主积薪其中，苫蔽成丘。屠乃奔倚其下，弛担持刀。狼不敢前，眈眈相向。</p>
+                 
+                <p>少时，一狼径去，其一犬坐于前。久之，目似瞑，意暇甚。屠暴起，以刀劈狼首，又数刀毙之。方欲行，转视积薪后，一狼洞其中，意将隧入以攻其后也。身已半入，止露尻尾。屠自后断其股，亦毙之。乃悟前狼假寐，盖以诱敌。</p>
+                 
+                <p>狼亦黠矣，而顷刻两毙，禽兽之变诈几何哉？止增笑耳。</p>
+                 
+                <p></p>
+                 
+                <p>其三</p>
+                 
+                <p>一屠暮行，为狼所逼。道旁有夜耕所遗行室，奔入伏焉。狼自苫中探爪入。屠急捉之，令不可去。但思无计可以死之。惟有小刀不盈寸，遂割破狼爪下皮，以吹豕之法吹之。极力吹移时，觉狼不甚动，方缚以带。出视，则狼胀如牛，股直不能屈，口张不得合。遂负之以归。</p>
+                 
+                <p>非屠，乌能作此谋也！</p>
+                 
+                <p>三事皆出于屠；则屠人之残爆，杀狼亦可用也。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/初中文言文.html">初中文言文</a></p>
+                <p></p>
+                <p>清代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

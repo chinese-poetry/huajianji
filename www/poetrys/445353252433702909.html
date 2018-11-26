@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 蔺相如完璧归赵论 | 初中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00034.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                蔺相如完璧归赵论
+            </div>
+            <div class="author">
+                王世贞
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>蔺相如之完璧，人皆称之。予未敢以为信也。</p>
+                 
+                <p></p>
+                 
+                <p>夫秦以十五城之空名，诈赵而胁其璧。是时言取璧者，情也，非欲以窥赵也。赵得其情则弗予，不得其情则予；得其情而畏之则予，得其情而弗畏之则弗予。此两言决耳，奈之何既畏而复挑其怒也！</p>
+                 
+                <p></p>
+                 
+                <p>且夫秦欲璧，赵弗予璧，两无所曲直也。入璧而秦弗予城，曲在秦；秦出城而璧归，曲在赵。欲使曲在秦，则莫如弃璧；畏弃璧，则莫如弗予。夫秦王既按图以予城，又设九宾，斋而受璧，其势不得不予城。璧入而城弗予，相如则前请曰：“臣固知大王之弗予城也。夫璧非赵璧乎？而十五城秦宝也。今使大王以璧故，而亡其十五城，十五城之子弟，皆厚怨大王以弃我如草芥也。大王弗与城，而绐赵璧，以一璧故，而失信于天下，臣请就死于国，以明大王之失信！”秦王未必不返璧也。今奈何使舍人怀而逃之，而归直于秦？</p>
+                 
+                <p></p>
+                 
+                <p>是时秦意未欲与赵绝耳。令秦王怒而僇相如于市，武安君十万众压邯郸，而责璧与信，一胜而相如族，再胜而璧终入秦矣。</p>
+                 
+                <p></p>
+                 
+                <p>吾故曰：蔺相如之获全于璧也，天也。若其劲渑池，柔廉颇，则愈出而愈妙于用。所以能完赵者，天固曲全之哉！</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/初中文言文.html">初中文言文</a></p>
+                <p></p>
+                <p>明代</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

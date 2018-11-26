@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 召公谏厉王弭谤 | 高中文言文 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00063.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                召公谏厉王弭谤
+            </div>
+            <div class="author">
+                佚名
+            </div>
+
+            <div class="content" style="padding-left: 1em;">
+                
+                <p>厉王虐，国人谤王。召公告曰：“民不堪命矣！”王怒，得卫巫，使监谤者。以告，则杀之。国人莫敢言，道路以目。</p>
+                 
+                <p>王喜，告召公曰：“吾能弭谤矣，乃不敢言。”召公曰：“是鄣之也。防民之口，甚于防川；川雍而溃，伤人必多。民亦如之。是故为川者，决之使导；为民者，宣之使言。故天子听政，使公卿至于列士献诗，瞽献曲，史献书，师箴，瞍赋，朦诵，百工谏，庶人传语，近臣尽规，亲戚补察，瞽、史教诲，耆艾修之，而后王斟酌焉。是以事行而不悖。民之有口也，犹土之有山川也，财用于是乎出；犹其有原隰衍沃也，衣食于是乎生。口之宣言也，善败于是乎兴。行善而备败，所以阜财用衣食者也。夫民虑之于心，而宣之于口，成而行之，胡可壅也？若壅其口，其与能几何？”</p>
+                 
+                <p>王弗听，于是国人莫敢出言。三年，乃流王于彘。</p>
+                 
+            </div>
+
+            <hr class="line right">
+
+            <div class="meta content">
+                <p><a class="link under" href="../../www/list/高中文言文.html">高中文言文</a></p>
+                <p></p>
+                <p>先秦</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>

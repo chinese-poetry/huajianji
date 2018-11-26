@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+    
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
+        <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
+        <title> 小学古诗·六年级下册 </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../assets/global.css">
+        <link rel="stylesheet" href="../../assets/theme.css">
+        <link rel="stylesheet" href="../../assets/semantic/components/site.min.css">
+        <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="128x128" href="../../assets/images/favicon.ico">
+        <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../assets/semantic/components/container.min.css">
+    <link rel="stylesheet" href="../../assets/semantic/components/grid.min.css">
+    <link rel="stylesheet" href="../../assets/semantic/components/list.min.css">
+
+    </head>
+    
+    <body class="sk-green">
+        <div id="main">
+        
+<div id="detail" class="ui stackable two column grid">
+    <div class="zuo column">
+        <div class="cover" style="background-image: url('../../images/polayoutu-00068.jpg');">
+            <div class="intro">
+                <div class="inner">
+                来自: <a href="http://www.polayoutu.com/collections" target="blank">泼辣有图</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="you column">
+        <div class="poetry">
+            <div class="title">
+                小学古诗·六年级下册
+            </div>
+
+            <hr class="line" style="margin-left: 0;"/>
+            
+            <div class="meta content">
+                <p><a class="link under" href="../../">首页</a> · <a class="link under" href="../../www/教科书.html">教科书</a></p>
+            </div>
+
+                <div class="ui selection list">
+                
+                    <div class="item content">
+                        <p>- <span style="color: #333;">皮日休</span> <a class="link" href="../../www/poetrys/6282160021367641317.html">天竺寺八月十五日夜桂子</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">曹植</span> <a class="link" href="../../www/poetrys/5605350075926836684.html">七步诗</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/4212514909056632350.html">闻官军收河南河北</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">杜甫</span> <a class="link" href="../../www/poetrys/5636920109609026663.html">江畔独步寻花·其六</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王维</span> <a class="link" href="../../www/poetrys/5650418400477350878.html">鸟鸣涧</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王安石</span> <a class="link" href="../../www/poetrys/2258249238889911626.html">元日</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">苏轼</span> <a class="link" href="../../www/poetrys/238936302795769679.html">浣溪沙·游蕲水清泉寺</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">于谦</span> <a class="link" href="../../www/poetrys/5595606032161749137.html">石灰吟</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">郑燮</span> <a class="link" href="../../www/poetrys/2258249229071844590.html">竹石</a></p>
+                    </div>
+                 
+                    <div class="item content">
+                        <p>- <span style="color: #333;">王昌龄</span> <a class="link" href="../../www/poetrys/4651310887678219976.html">芙蓉楼送辛渐</a></p>
+                    </div>
+                 
+                </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mobile">
+            <div id="footer" class="content">
+                <div id="jinrishici-tag">长恨</div>
+                <span id="jinrishici-sentence">自是人生长恨水长东.</span>
+            </div>
+
+            <div class="end content">
+                <p>© 中文诗词 2018</p>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    
+    <script>
+    // 今日诗词
+    function jinrishiciLoad () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', 'https://v2.jinrishici.com/one.json');
+        xhr.withCredentials = true;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            var data = JSON.parse(xhr.responseText);
+            // 处理示例
+            var gushici = document.getElementById('jinrishici-sentence');
+            gushici.innerText = data.data.content;
+            var gushiciTag = document.getElementById('jinrishici-tag');
+            gushiciTag.innerText = data.data.matchTags[0];
+          }
+        };
+        xhr.send();
+    }
+
+    jinrishiciLoad()
+    </script>
+    
+
+</html>
