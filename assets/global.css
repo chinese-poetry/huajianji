@@ -62,11 +62,16 @@ body ::-webkit-scrollbar {
     width: auto;
     padding: .715em 1em;
     display: inline-block;
+    font-size: 12px;
 }
 
 #main #detail .cover .intro .inner a {
     color: #fff;
     border-bottom: 1px solid #fff;
+}
+
+#main #detail .cover .intro .inner a:hover {
+    color: #fdf1db;
 }
 
 #main #detail .you .list .item {
