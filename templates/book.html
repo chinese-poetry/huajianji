@@ -11,7 +11,12 @@
 {% block main %}
 <div id="detail" class="ui stackable two column grid">
     <div class="zuo column">
-        <div class="cover" style="background-image: url('{{root}}images/{{ image }}');">
+        <div class="cover" style="background-image: url('{{root}}images/{{ image.src }}');">
+            <div class="intro">
+                <div class="inner">
+                来自: {% if image.link %}<a href="{{image.link}}" target="blank">{{ image.author }}</a>{% else %}{{ image.author }}{% endif %}
+                </div>
+            </div>
         </div>
     </div>
     <div class="you column">

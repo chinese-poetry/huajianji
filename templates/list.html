@@ -11,7 +11,12 @@
 {% block main %}
 <div id="detail" class="ui stackable two column grid">
     <div class="zuo column">
-        <div class="cover" style="background-image: url('{{root}}images/{{image}}');">
+        <div class="cover" style="background-image: url('{{root}}images/{{image.src}}');">
+            <div class="intro">
+                <div class="inner">
+                来自: {% if image.link %}<a href="{{image.link}}" target="blank">{{ image.author }}</a>{% else %}{{ image.author }}{% endif %}
+                </div>
+            </div>
         </div>
     </div>
     <div class="you column">
@@ -23,7 +28,7 @@
             <hr class="line" style="margin-left: 0;"/>
             
             <div class="meta content">
-                <p><a class="link under" href="{{root}}www/{{book}}.html">{{ book }}</a></p>
+                <p><a class="link under" href="{{root}}">首页</a> · <a class="link under" href="{{root}}www/{{book}}.html">{{ book }}</a></p>
             </div>
 
                 <div class="ui selection list">

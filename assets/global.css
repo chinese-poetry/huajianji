@@ -47,6 +47,28 @@ body ::-webkit-scrollbar {
     left: 0; right: 0; top: 0; bottom: 0;
 }
 
+#main #detail .cover .intro {
+    width: 100%;
+    text-align: right;
+    margin: auto;
+    position: absolute;
+    bottom: 2em;
+    right: 0em;
+}
+
+#main #detail .cover .intro .inner {
+    background: rgba(0, 0, 0, 0.3686274509803922);
+    color: #fff;
+    width: auto;
+    padding: .715em 1em;
+    display: inline-block;
+}
+
+#main #detail .cover .intro .inner a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
 #main #detail .you .list .item {
     padding: 0;
     padding-top: 1em;
@@ -253,6 +275,10 @@ body ::-webkit-scrollbar {
 
 @media print {
     #main #notes {
+        display: none;
+    }
+
+    #main .cover .intro {
         display: none;
     }
 }

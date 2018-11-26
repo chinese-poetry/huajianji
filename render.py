@@ -17,7 +17,7 @@ sys.setdefaultencoding('utf-8')
 template_loader = jinja2.FileSystemLoader(searchpath="templates")
 template_env = jinja2.Environment(loader=template_loader)
 WORD_TEMPLATE_FILE = "detail.html"
-images = os.listdir(u'./images/')
+images = json.loads(open('images.json', 'r').read())
 
 
 if os.path.exists('.image.json'):
@@ -32,7 +32,6 @@ def get_image(_id):
     if _id in image_map:
         return image_map[_id]
     else:
-        print _id
         image = random.choice(images)
         image_map[_id] = image
         return image
