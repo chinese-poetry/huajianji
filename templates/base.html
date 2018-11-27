@@ -2,18 +2,15 @@
     <head>
         <meta charset="utf-8">
         {% block head %}
+        <title>{% block title %}{% endblock %}</title>
         <meta name="author"  content="JackeyGao">
         <meta name="description" content="JackeyGao, 一个程序员的技术分享和对生活的理解.">
         <meta name="keywords"  content="JackeyGao, JackeyGao的日记本, Python, Django, Vue.js, chinese-poetry">
-        <title>{% block title %}{% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{root}}assets/global.css">
         <link rel="stylesheet" href="{{root}}assets/theme.css">
         <link rel="stylesheet" href="{{root}}assets/semantic/components/site.min.css">
-        <link rel="shortcut icon" href="{{root}}assets/images/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" sizes="128x128" href="{{root}}assets/images/favicon.ico">
-        <link rel="icon" href="{{root}}assets/images/favicon.ico" type="image/x-icon">
-        {% endblock %}
+        {% include 'favicon.html' %}{% endblock %}
     </head>
     
     <body class="sk-green">
