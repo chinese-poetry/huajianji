@@ -17,7 +17,9 @@ sys.setdefaultencoding('utf-8')
 template_loader = jinja2.FileSystemLoader(searchpath="templates")
 template_env = jinja2.Environment(loader=template_loader)
 WORD_TEMPLATE_FILE = "detail.html"
-images = json.loads(open('images.json', 'r').read())
+images = json.loads(open('config/images.json', 'r').read())
+imageMaps = {x['src']: x for x in images}
+specify = json.loads(open('config/specify_cover.json').read())
 
 
 if os.path.exists('.image.json'):
@@ -29,6 +31,11 @@ else:
 
 def get_image(_id):
     global image_map
+    if _id in specify:
+        image = imageMaps.get(specify[_id], None)
+        if image:
+            return image
+
     if _id in image_map:
         return image_map[_id]
     else:

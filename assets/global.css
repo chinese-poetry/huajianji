@@ -202,6 +202,12 @@ body ::-webkit-scrollbar {
     left: 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #main #detail .ui.three.cards>.card {
+        width: calc(50% - 2em);
+    }
+}
+
 
 @media only screen and (max-width: 767px) {
     #main #detail .poetry {    
@@ -263,6 +269,10 @@ body ::-webkit-scrollbar {
 @media print and (orientation:landscape) {
     #main .grid .column {
         width: 50%;
+    }
+
+    #main #detail .ui.three.cards>.card {
+        width: calc(50% - 2em);
     }
 
     #main #detail .cover {
