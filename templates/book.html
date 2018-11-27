@@ -27,7 +27,9 @@
 
 
             <div class="content meta">
-                <p>{{ book.1 }}</p>
+                {% autoescape false %}
+                    <p>{{ book.1 | replace("\n", "<br/>") }}</p>
+                {% endautoescape %}
                 <p><a class="link under" href="{{root}}">主页</a></p>
             </div>
 
