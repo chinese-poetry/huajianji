@@ -27,13 +27,13 @@
 
 
             <div class="content meta">
+                <hr class="line" style="margin-left: 0;" align="left"/>
                 {% autoescape false %}
                     <p>{{ book.1 | replace("\n", "<br/>") }}</p>
                 {% endautoescape %}
                 <p><a class="link under" href="{{root}}">主页</a></p>
             </div>
 
-            <hr class="line" style="margin-left: 0;"/>
 
             <div class="ui selection list">
             {% for juan in juans %}
