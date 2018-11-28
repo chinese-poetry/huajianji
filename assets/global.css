@@ -9,6 +9,15 @@ body ::-webkit-scrollbar {
     color: #2c3e50;
 }
 
+#main {
+    height: 100%;
+}
+
+#main .grid {
+    margin: 0;
+    height: 100%;
+}
+
 #main .list .item .link {
     color: #80ac7b;
 }
@@ -26,9 +35,6 @@ body ::-webkit-scrollbar {
     font-weight: bold;
 }
 
-#main .grid {
-    margin: 0;
-}
 
 #main .grid .column {
     height: 100%;
@@ -200,6 +206,7 @@ body ::-webkit-scrollbar {
     width: 100%;
     right: 0;
     left: 0;
+    text-shadow: 2px 0px #333;;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -212,9 +219,9 @@ body ::-webkit-scrollbar {
 @media only screen and (max-width: 767px) {
     #main #detail .poetry {    
         width: 100%;
-        overflow: unset;
+        overflow: visible;
         height: auto;
-        position: unset;
+        position: static;
     }
 
     #main .mobile {
@@ -227,14 +234,22 @@ body ::-webkit-scrollbar {
     }
 
     #main #detail .zuo {
-        max-height: 450px;
-        height: 50%;
+        height: 450px;
     }
 
     #main #detail .you {
         padding: 1em;
         height: auto;
     }
+    #main {
+        height: auto;
+    }
+    
+    #main .grid {
+        margin: 0;
+        height: auto;
+    }
+
 }
 
 @media print and (orientation:portrait) {
@@ -260,8 +275,7 @@ body ::-webkit-scrollbar {
     }
 
     #main #detail .zuo {
-        max-height: 50%;
-        height: 50%;
+        min-height: 50%;
     }
 }
 

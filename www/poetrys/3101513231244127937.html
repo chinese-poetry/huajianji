@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -32,7 +33,7 @@
 
     </head>
     
-    <body class="sk-green">
+    <body>
         <div id="main">
         
 <div id="detail" class="ui stackable two column grid">
@@ -484,7 +485,11 @@
             var gushici = document.getElementById('jinrishici-sentence');
             gushici.innerText = data.data.content;
             var gushiciTag = document.getElementById('jinrishici-tag');
-            gushiciTag.innerText = data.data.matchTags[0];
+            if (data.data.matchTags.length > 0) {
+                gushiciTag.innerText = data.data.matchTags[0];
+            } else {
+                gushiciTag.innerText = data.data.origin.author;
+            }
           }
         };
         xhr.send();
