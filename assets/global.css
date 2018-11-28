@@ -5,6 +5,7 @@ body ::-webkit-scrollbar {
 }
 
 
+
 .link {
     color: #2c3e50;
 }
@@ -93,6 +94,7 @@ body ::-webkit-scrollbar {
 }
 
 #main #detail .poetry {
+    -ms-overflow-style: none;
     height: 80%;
     width: 80%;
     margin: auto;
