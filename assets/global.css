@@ -166,8 +166,6 @@ body ::-webkit-scrollbar {
 
 #main .content p {
     line-height: 1.8285em;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 #main #detail .line{
