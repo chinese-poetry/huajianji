@@ -12,11 +12,16 @@ body ::-webkit-scrollbar {
 
 #main {
     height: 100%;
+    background-size: contain;
+    margin: 0!important;
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 #main .grid {
     margin: 0;
     height: 100%;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 #main .list .item .link {
@@ -89,7 +94,6 @@ body ::-webkit-scrollbar {
 
 #main #detail .you {
    /* background-image: url('/assets/images/bg.png'); */
-    background-color: #fff;
     color: #333;
 }
 
@@ -102,6 +106,9 @@ body ::-webkit-scrollbar {
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
     overflow: auto;
+    border: 1px solid #eee;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #main #detail .title {
@@ -129,6 +136,15 @@ body ::-webkit-scrollbar {
     line-height: 1.8em;
 }
 
+#main .projects .content p {
+    margin: 0;
+}
+
+#main .card .content .url {
+    font-size: 14px;
+    opacity: 0.4;
+}
+
 #main .content p {
     line-height: 1.8285em;
 }
@@ -150,7 +166,6 @@ body ::-webkit-scrollbar {
 }
 
 #main #detail .meta {
-    padding-right: 1em;
     text-align: right;
 }
 
