@@ -21,26 +21,28 @@
     </div>
     <div class="you column">
         <div class="poetry">
-            <div class="title">
-                {{ book.0 }}
-            </div>
-
-
-            <div class="content meta">
-                <hr class="line" style="margin-left: 0;" align="left"/>
-                {% autoescape false %}
-                    <p>{{ book.1 | replace("\n", "<br/>") }}</p>
-                {% endautoescape %}
-                <p><a class="link under" href="{{root}}">主页</a></p>
-            </div>
-
-
-            <div class="ui selection list">
-            {% for juan in juans %}
-                <div class="item content">
-                    <p><a class="link" href="{{root}}www/list/{{juan}}.html">{{ juan }}</a></p>
+            <div class="inner-wrapper">
+                <div class="title">
+                    {{ book.0 }}
                 </div>
-            {% endfor %}
+
+
+                <div class="content meta">
+                    <hr class="line" style="margin-left: 0;" align="left"/>
+                    {% autoescape false %}
+                        <p>{{ book.1 | replace("\n", "<br/>") }}</p>
+                    {% endautoescape %}
+                    <p><a class="link under" href="{{root}}">主页</a></p>
+                </div>
+
+
+                <div class="ui selection list">
+                {% for juan in juans %}
+                    <div class="item content">
+                        <p><a class="link" href="{{root}}www/list/{{juan}}.html">{{ juan }}</a></p>
+                    </div>
+                {% endfor %}
+                </div>
             </div>
         </div>
     </div>

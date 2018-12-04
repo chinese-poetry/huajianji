@@ -19,38 +19,40 @@
     </div>
     <div class="you column">
         <div class="poetry">
-            <div class="title">
-                {{ poetry.title }}
-            </div>
-            <div class="author">
-                {{ poetry.author }}
-            </div>
-
-            <div class="content" style="padding-left: 1em;">
-                {% for p in poetry.paragraphs %}
-                <p>{{ p }}</p>
-                 {% endfor %}
-            </div>
-
-
-            <div class="meta content">
-                <hr class="line" align="right">
-                <p><a class="link under" href="{{root}}www/list/{{juan}}.html">{{juan}}</a></p>
-                <p>{{poetry.rhythmic}}</p>
-                <p>{{poetry.dynasty}}</p>
-            </div>
-
-            {% if poetry.notes %}
-            <div id="notes">
-                <h3 class="ui header">注释</h3>
-
-                <div class="notes content">
-                    {% for left, right in poetry.notes %}
-                    <p>[{{ loop.index }}] 「{{ left }}」 {{ right }}</p>
-                    {% endfor %}
+            <div class="inner-wrapper">
+                <div class="title">
+                    {{ poetry.title }}
                 </div>
+                <div class="author">
+                    {{ poetry.author }}
+                </div>
+
+                <div class="content" style="padding-left: 1em;">
+                    {% for p in poetry.paragraphs %}
+                    <p>{{ p }}</p>
+                     {% endfor %}
+                </div>
+
+
+                <div class="meta content">
+                    <hr class="line" align="right">
+                    <p><a class="link under" href="{{root}}www/list/{{juan}}.html">{{juan}}</a></p>
+                    <p>{{poetry.rhythmic}}</p>
+                    <p>{{poetry.dynasty}}</p>
+                </div>
+
+                {% if poetry.notes %}
+                <div id="notes">
+                    <h3 class="ui header">注释</h3>
+
+                    <div class="notes content">
+                        {% for left, right in poetry.notes %}
+                        <p>[{{ loop.index }}] 「{{ left }}」 {{ right }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
     </div>
 </div>
