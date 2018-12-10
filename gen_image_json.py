@@ -25,9 +25,11 @@ for i in images:
     elif 'jackeygao' in i:
         link = "https://jackeygao.io"
         author = "JackeyGao"
-        p = 5
+        p = 1
     else:
-        continue
+        link = "#"
+        author = "互联网"
+        p = 1
         
 
     for _ in range(p):
