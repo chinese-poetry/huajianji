@@ -245,6 +245,39 @@ body ::-webkit-scrollbar {
     text-shadow: 2px 0px #333;;
 }
 
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0)
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #main #detail .ui.three.cards>.card {
         width: calc(50% - 2em);
