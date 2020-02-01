@@ -32,6 +32,23 @@ body ::-webkit-scrollbar {
     color: #2c3e50;
 }
 
+#main .poetry .card {
+    border-radius: 0;
+}
+
+#main .weapp-wrapper {
+    display: flex;
+}
+
+#main .weapp-wrapper .item {
+    padding: 16px;
+}
+
+#main .weapp-wrapper img {
+    width: 200px;
+    height: 200px;
+}
+
 .link.under {
     border-bottom: 1px solid #2c3e50;
 }

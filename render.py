@@ -11,19 +11,17 @@ from datetime import datetime
 
 version = uuid4().hex
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 template_loader = jinja2.FileSystemLoader(searchpath="templates")
 template_env = jinja2.Environment(loader=template_loader)
 WORD_TEMPLATE_FILE = "detail.html"
-images = json.loads(open('config/images.json', 'r').read())
+images = json.loads(open('config/images.json', 'r', encoding='utf-8').read())
 imageMaps = {x['src']: x for x in images}
 specify = json.loads(open('config/specify_cover.json').read())
 
 
 if os.path.exists('.image.json'):
-    with open('.image.json', 'r') as f:
+    with open('.image.json', 'r', encoding="utf-8") as f:
         image_map = json.loads(f.read())
 else:
     image_map = {}
@@ -50,6 +48,7 @@ dirs = [
     ('宋词三百首', ''),
     ('教科书选诗', '教科书出版社\n包含人民教育出版社、江苏教育出版社等'),
     ('古诗十九首', '无名氏'),
+    ('诗经', '佚名')
 ]
 
 paths = []
@@ -75,7 +74,7 @@ for book, path, juan in paths:
 
     books[(book, dict(dirs)[book])].append(juan)
 
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding="utf-8") as f:
         content = f.read()
 
     poetrys = json.loads(content)
@@ -110,7 +109,7 @@ for book, path, juan in paths:
         
         html_filename = 'www/poetrys/%s.html' % poetry["id"]
         
-        with open(html_filename, 'w') as f:
+        with open(html_filename, 'w', encoding="utf-8") as f:
              f.write(output)
 
     
@@ -118,7 +117,7 @@ for book, path, juan in paths:
     image = get_image(juan)
     template = template_env.get_template('list.html')
     output = template.render(poetrys=poetrys, juan=juan, image=image, root=root, book=book)
-    with open('www/list/%s.html' % juan, 'w') as f:
+    with open('www/list/%s.html' % juan, 'w', encoding="utf-8") as f:
         f.write(output)
 
 for book, juans in books.items():
@@ -127,17 +126,17 @@ for book, juans in books.items():
     template = template_env.get_template('book.html')
     output = template.render(book=book, juans=juans, image=image, root=root)
             
-    with open('www/%s.html' % book[0], 'w') as f:
+    with open('www/%s.html' % book[0], 'w', encoding="utf-8") as f:
         f.write(output)
         
 root = './'
 image = get_image('index')
 template = template_env.get_template('index.html')
 output = template.render(books=books, image=image, author="", root=root)
-with open('index.html' ,'w') as f:
+with open('index.html' ,'w', encoding="utf-8") as f:
     f.write(output)
         
 
-with open('.image.json', 'w') as f:
+with open('.image.json', 'w', encoding="utf-8") as f:
     f.write(json.dumps(image_map, indent=2, ensure_ascii=False))
     
