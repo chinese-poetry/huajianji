@@ -5,7 +5,7 @@ body ::-webkit-scrollbar {
 }
 
 body {
-    font-family: "Source Han Serif SC", Manuale, "Consolas", "Noto Serif CJK SC", STFangsong,FangSong,FangSong_GB2312, "Songti SC", STSong, serif, PingFangSC-Light, PingFangTC-Light, sans-serif, Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol!important;
+    font-family: "Source Han Serif SC", Manuale, "Consolas", "Noto Serif CJK SC", "Songti SC", STSong, serif, PingFangSC-Light, PingFangTC-Light, sans-serif, Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol!important;
 }
 
 
