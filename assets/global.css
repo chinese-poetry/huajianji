@@ -4,6 +4,10 @@ body ::-webkit-scrollbar {
     height: 2px!important;
 }
 
+body {
+    font-family: "Source Han Serif SC", Manuale, "Consolas", "Noto Serif CJK SC", STFangsong,FangSong,FangSong_GB2312, "Songti SC", STSong, serif, PingFangSC-Light, PingFangTC-Light, sans-serif, Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol!important;
+}
+
 
 
 .link {
@@ -38,6 +42,7 @@ body ::-webkit-scrollbar {
 
 #main .weapp-wrapper {
     display: flex;
+    flex-flow: row wrap;
 }
 
 #main .weapp-wrapper .item {
@@ -46,7 +51,6 @@ body ::-webkit-scrollbar {
 
 #main .weapp-wrapper img {
     width: 200px;
-    height: 200px;
 }
 
 .link.under {
@@ -308,6 +312,10 @@ body ::-webkit-scrollbar {
         overflow: visible;
         height: auto;
         position: static;
+    }
+
+    #main .weapp-wrapper img {
+        width: 100%;
     }
 
     #main .mobile {
