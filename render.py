@@ -48,7 +48,11 @@ dirs = [
     ('宋词三百首', ''),
     ('教科书选诗', '教科书出版社\n包含人民教育出版社、江苏教育出版社等'),
     ('古诗十九首', '无名氏'),
-    ('诗经', '佚名')
+    ('诗经', '佚名'),
+    ('千家诗', '南宋·謝枋得\n明代·王相'),
+    ('声律启蒙', '清·车万育'),
+    ('三字经', '王應麟'),
+    ('唐诗三百首·蒙学', '清代·蘅塘退士'),
 ]
 
 paths = []
@@ -82,8 +86,10 @@ for book, path, juan in paths:
         notes = []
 
         poetry["id"] = str(hash(juan + poetry["title"])).replace('-','')
+
+        note_items = poetry.get('notes', [])
         
-        for note in poetry["notes"]:
+        for note in note_items:
             if '--' in note:
                 left, right = note.split('--')
             elif '-' in note:
