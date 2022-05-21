@@ -137,7 +137,7 @@ for book, juans in books.items():
 
 
 
-def get_season(today):
+def get_season():
     today = date.today()
 
     lichun = date(today.year, 2, 4)
