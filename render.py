@@ -41,6 +41,31 @@ def get_image(_id):
         image_map[_id] = image
         return image
 
+def get_season():
+    today = date.today()
+
+    lichun = date(today.year, 2, 4)
+    xiazhi = date(today.year, 6, 21)
+    liqiu = date(today.year, 8, 7)
+    dongzhi = date(today.year, 12, 22)
+    lastyear_dongzhi = date(today.year - 1, 12, 22)
+    nextyear_lichun = date(today.year + 1, 2, 4)
+
+    if (lastyear_dongzhi < today < lichun):
+        return 'mei'
+    elif (dongzhi < today < nextyear_lichun):
+        return 'mei'
+    elif (lichun < today < xiazhi):
+        return 'ying'
+    elif (xiazhi < today < liqiu):
+        return 'he'
+    elif (liqiu < today < dongzhi):
+        return 'ju'
+    
+    return 'ying'
+
+season = get_season()
+
 dirs = [
     ('花间集', '赵崇祚'),
     ('南唐二主词', '李煜 李璟'),
@@ -111,7 +136,7 @@ for book, path, juan in paths:
         root = '../../'
         image = get_image(poetry["id"])
         template = template_env.get_template(WORD_TEMPLATE_FILE)
-        output = template.render(poetry=poetry, juan=juan, image=image, root=root)
+        output = template.render(poetry=poetry, juan=juan, image=image, root=root, season=season)
         
         html_filename = 'www/poetrys/%s.html' % poetry["id"]
         
@@ -122,7 +147,7 @@ for book, path, juan in paths:
     root = '../../'
     image = get_image(juan)
     template = template_env.get_template('list.html')
-    output = template.render(poetrys=poetrys, juan=juan, image=image, root=root, book=book)
+    output = template.render(poetrys=poetrys, juan=juan, image=image, root=root, book=book, season=season)
     with open('www/list/%s.html' % juan, 'w', encoding="utf-8") as f:
         f.write(output)
 
@@ -130,43 +155,17 @@ for book, juans in books.items():
     root = '../'        
     image = get_image(str(hash(book[0])).replace('-', ''))
     template = template_env.get_template('book.html')
-    output = template.render(book=book, juans=juans, image=image, root=root)
+    output = template.render(book=book, juans=juans, image=image, root=root, season=season)
             
     with open('www/%s.html' % book[0], 'w', encoding="utf-8") as f:
         f.write(output)
-
-
-
-def get_season():
-    today = date.today()
-
-    lichun = date(today.year, 2, 4)
-    xiazhi = date(today.year, 6, 21)
-    liqiu = date(today.year, 8, 7)
-    dongzhi = date(today.year, 12, 22)
-    lastyear_dongzhi = date(today.year - 1, 12, 22)
-    nextyear_lichun = date(today.year + 1, 2, 4)
-
-    if (lastyear_dongzhi < today < lichun):
-        return 'mei'
-    elif (dongzhi < today < nextyear_lichun):
-        return 'mei'
-    elif (lichun < today < xiazhi):
-        return 'ying'
-    elif (xiazhi < today < liqiu):
-        return 'he'
-    elif (liqiu < today < dongzhi):
-        return 'ju'
-    
-    return 'ying'
-
         
 root = './'
 image = get_image('index')
 template = template_env.get_template('index.html')
-season = get_season()
 output = template.render(books=books, image=image, author="", root=root, season=season)
 with open('index.html' ,'w', encoding="utf-8") as f:
+    print("create index.html")
     f.write(output)
         
 
