@@ -6,7 +6,7 @@ import sys
 from uuid import uuid4
 from os.path import splitext
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, date
 #from pagination import Pagination
 
 version = uuid4().hex
@@ -134,11 +134,37 @@ for book, juans in books.items():
             
     with open('www/%s.html' % book[0], 'w', encoding="utf-8") as f:
         f.write(output)
+
+
+
+def get_season(today):
+    today = date.today()
+
+    lichun = date(today.year, 2, 4)
+    xiazhi = date(today.year, 6, 21)
+    liqiu = date(today.year, 8, 7)
+    dongzhi = date(today.year, 12, 22)
+    lastyear_dongzhi = date(today.year - 1, 12, 22)
+    nextyear_lichun = date(today.year + 1, 2, 4)
+
+    if (lastyear_dongzhi < today < lichun):
+        return 'mei'
+    elif (dongzhi < today < nextyear_lichun):
+        return 'mei'
+    elif (lichun < today < xiazhi):
+        return 'ying'
+    elif (xiazhi < today < liqiu):
+        return 'he'
+    elif (liqiu < today < dongzhi):
+        return 'ju'
+    
+    return 'ying'
+
         
 root = './'
 image = get_image('index')
 template = template_env.get_template('index.html')
-output = template.render(books=books, image=image, author="", root=root)
+output = template.render(books=books, image=image, author="", root=root, season=get_season())
 with open('index.html' ,'w', encoding="utf-8") as f:
     f.write(output)
         
