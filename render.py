@@ -164,7 +164,8 @@ def get_season():
 root = './'
 image = get_image('index')
 template = template_env.get_template('index.html')
-output = template.render(books=books, image=image, author="", root=root, season=get_season())
+season = get_season()
+output = template.render(books=books, image=image, author="", root=root, season=season)
 with open('index.html' ,'w', encoding="utf-8") as f:
     f.write(output)
         
